@@ -1,0 +1,98 @@
+<!DOCTYPE>
+<html manifest="../manifest/index.appcache">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>消息中心</title>
+    <link href="../css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="../css/common.css" rel="stylesheet" type="text/css" />
+    <link href="../css/index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="headBox">
+    <div class="main">
+        <div class="header">
+            <span class="f-l">返回</span>
+            <em class="headerMargin">消息中心</em>
+            <span class="f-r" id="J_edit">编辑</span>
+        </div>
+    </div>
+</div>
+
+<div class="main messBox mainMarginTop">
+    <div class="messNav">
+        <div class="messNavHead">全部消息<span>共4条</span></div>
+        <ul class="messNavList">
+            <li>通知类<span>共1条</span></li>
+            <li>优惠类<span>共1条</span></li>
+            <li>精品类<span>共1条</span></li>
+            <li>生活类<span>共1条</span></li>
+        </ul>
+        <ul class="messNavList messNavLove">
+            <li><i></i>我的收藏<span>共1条</span></li>
+        </ul>
+    </div>
+    <div class="messMain">
+        <div class="messHead pl-1em pr-1em">
+            <div class="f-l ads-c-60">
+                <i class="messAll"><img src="../images/index/allicon.png" /></i>全部消息<span>0条</span>
+            </div>
+            <div class="f-r ads-c-40 text-right">
+                <span>无</span>未读
+            </div>
+        </div>
+        <ul class="messList">
+            <li>
+                <div class="messListTitle">给全天下所有辛勤的园丁们送 上祝福</div>
+                <span>2015-09-10 16:05</span>
+                <p>我们准备了1000份10元话费！白送 ！白送！</p>
+                <div class="messEditBtn">
+                    <span class="messLoveBtn hui">收藏</span>
+                    <span class="messDelBtn hui">删除</span>
+                </div>
+            </li>
+            <li>
+                <div class="messListTitle readed"><i class="messImportant bg-cover"></i>进来教你如何让流量激增！</div>
+                <span>2015-09-10 16:05</span>
+                <p>为了省流量只能加入标题党，各种微 博微信只看不发，只能默默关注别人！</p>
+                <div class="messEditBtn">
+                    <span class="messLoveBtn">收藏</span>
+                    <span class="messDelBtn">删除</span>
+                </div>
+            </li>
+            <li>
+                <div class="messListTitle"><i class="messLove bg-cover"></i>每周六晚8点抢红包！</div>
+                <span>2015-09-10 16:05</span>
+                <p>10元话费、1G流量、100分钟通话红 包等你来抢！</p>
+                <div class="messEditBtn">
+                    <span class="messLoveBtn">收藏</span>
+                    <span class="messDelBtn">删除</span>
+                </div>
+            </li>
+            <li>
+                <div class="messListTitle">4G客户超70万啦！</div>
+                <span>2015-09-10 16:05</span>
+                <p>不做“奥特曼”，微信搜索“揭阳移 动”公众号赶紧关注！</p>
+                <div class="messEditBtn">
+                    <span class="messLoveBtn">收藏</span>
+                    <span class="messDelBtn">删除</span>
+                </div>
+            </li>
+        </ul>
+        <div class="messPopuBg hide"></div>
+        <div class="nomain hide">暂无消息！</div>
+
+    </div>
+</div>
+
+</body>
+<script src="../js/lib/seajs/seajs.js"></script>
+<script type="text/javascript">
+    seajs.use(['jquery','JSBridge','main'], function(a) {
+        seajs.use("../js/"+SCRIPT_PATH+"/model/index/messages");
+    });
+</script>
+
+</html>

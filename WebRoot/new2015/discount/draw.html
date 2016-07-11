@@ -1,0 +1,76 @@
+<!DOCTYPE>
+<html manifest="../manifest/discount/draw.appcache">
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport"
+          content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <title>抽奖活动</title>
+    <link href="../css/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/swiper.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/discount.css" rel="stylesheet" type="text/css"/>
+</head>
+<body class="ovebg">
+<div class="main drawbg ovebg">
+    <!--bananer start-->
+    <div class="banner pr">
+        <div class="swiper-container" id="slider">
+            <ul class="swiper-wrapper" style="height:auto">
+                <li class="swiper-slide">
+                    <img src="../images/discount/banner01.jpg">
+                </li>
+                <li class="swiper-slide">
+                    <img src="../images/discount/banner01.jpg">
+                </li>
+                <li class="swiper-slide">
+                    <img src="../images/discount/banner01.jpg">
+                </li>
+            </ul>
+            <div class="swiper-pagination banner-pagination"></div>
+        </div>
+    </div>
+    <!--bananer end-->
+    <!--content start-->
+    <div class="drawMain">
+        <div class="drawText">
+            <div class="drawTitle lh-15">参与活动</div>
+            <p class="lh-18">揭阳移动幸运大转盘活动，首次登陆活动页面的和彩云用户即可免费抽奖一次，非和彩云用户是需要消耗10积分才能够抽奖奖品的哦!</p>
+            <div class="drawTitle lh-15">活动奖品</div>
+            <p class="lh-18">10-20积分、30-100计话费、1G-5G空间等</p>
+        </div>
+        <div class="oveDraw pr">
+            <img src="../images/common/overlaydrawbg10.png" alt="抽检背景图片" />
+            <div class="oveDrawText pa">
+                <div class="drawNum pa">10积分<img src="../images/common/draw10icon2.png" /></div>
+                <div class="drawNum pa">100话费<img src="../images/common/draw10icon2.png" /></div>
+                <div class="drawNum pa">1G空间<img src="../images/common/draw10icon1.png" /></div>
+                <div class="drawNum pa">2G空间<img src="../images/common/draw10icon3.png" /></div>
+                <div class="drawNum pa">再来一次<img src="../images/common/draw10icon3.png" /></div>
+                <div class="drawNum pa">999T空间<img src="../images/common/draw10icon4.png" /></div>
+                <div class="drawNum pa">谢谢参与<img src="../images/common/draw10icon3.png" /></div>
+                <div class="drawNum pa">50元话费<img src="../images/common/draw10icon4.png" /></div>
+                <div class="drawNum pa">30元话费<img src="../images/common/draw10icon1.png" /></div>
+                <div class="drawNum pa">20积分<img src="../images/common/draw10icon1.png" /></div>
+            </div>
+            <div class="oveDrawIcon pa">
+                <img src="../images/common/overlaydrawicon.png" alt="转动icon" />
+            </div>
+            <div class="drawBtn pa">
+                <img src="../images/common/drawbtnicon.png" alt="点击抽奖icon"/>
+                <div class="oveDrawClick pa"></div>
+            </div>
+        </div>
+        <div class="h2em"></div>
+    </div>
+    <!--content start-->
+</div>
+</body>
+<script src="../js/lib/seajs/seajs.js"></script>
+<script type="text/javascript">
+    seajs.use(['jquery','JSBridge','main','swiper'], function(a) {
+        seajs.use("../js/"+SCRIPT_PATH+"/model/index/index");
+    });
+</script>
+</html>

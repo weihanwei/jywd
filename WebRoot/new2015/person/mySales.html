@@ -1,0 +1,114 @@
+<!DOCTYPE>
+<html manifest="../manifest/person/mySales.appcache">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport"
+          content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <title>我的销量</title>
+    <link href="../css/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/swiper.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/date.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/person.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="main">
+    <div class="search">
+        <p>代理编号:DL13798156597</p>
+        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+            <tr>
+                <td>
+                    <div class="searchInput">
+                        <input type="text" name="phone" placeholder="请输入用户手机号码" value="" class="J_footHide" />
+                    </div>
+                </td>
+                <td>
+                    <span class="searchBtn f-r">查询</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="common-change-wrap nobrBottom">
+        <a href="#" class="ads-c-4"><span class="fem-10">我要做店长</span></a><a href="#" class="ads-c-4 active"><span
+            class="fem-10">我的销量</span></a>
+    </div>
+    <div class="mySalesTime">
+        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+            <tr>
+                <td width="40%">
+                    <input type="text" name="phone" placeholder="开始时间…" value="" class="mySTimeInput kbtn" id="starTime"/>
+                </td>
+                <td width="4%" align="center">
+                    <span>-</span>
+                </td>
+                <td width="40%">
+                    <input type="text" name="phone" placeholder="结束时间…" value="" class="mySTimeInput kbtn" id="endTime"/>
+                </td>
+                <td width="16%">
+                    <a href="#" class="mySBtn">统计</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <dl class="mySalesMain">
+        <dt>
+            <span>推荐业务</span>
+            <span>访问量</span>
+            <span>办理量</span>
+            <span>积分</span>
+        </dt>
+        <dd>
+            <span>流量王、大众卡</span>
+            <span>12</span>
+            <span>1</span>
+            <span><a href="#">2</a></span>
+        </dd>
+        <dd>
+            <span>58元及以下4G主...</span>
+            <span>12</span>
+            <span>1</span>
+            <span><a href="#">3</a></span>
+        </dd>
+        <dd>
+            <span>58元及以上4G主58元及以上4G主...</span>
+            <span>12</span>
+            <span>1</span>
+            <span><a href="#">3</a></span>
+        </dd>
+        <dd>
+            <span>20元叠加包</span>
+            <span>19</span>
+            <span>0</span>
+            <span><a href="#">3</a></span>
+        </dd>
+        <dd>
+            <span>30元叠加包</span>
+            <span>20</span>
+            <span>0</span>
+            <span><a href="#">2</a></span>
+        </dd>
+        <dd>
+            <span>50元叠加包</span>
+            <span>12</span>
+            <span>0</span>
+            <span><a href="#">3</a></span>
+        </dd>
+        <dd>
+            <span>100元叠加包</span>
+            <span>7</span>
+            <span>0</span>
+            <span><a href="#">3</a></span>
+        </dd>
+    </dl>
+</div>
+<div id="datePlugin"></div>
+</body>
+<script src="../js/lib/seajs/seajs.js"></script>
+<script type="text/javascript">
+    seajs.use(['jquery', 'JSBridge', 'main','tmpl','iscroll','dates'], function (a) {
+        seajs.use("../js/" + SCRIPT_PATH + "/model/person/mySales");
+    });
+</script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE>
+<html manifest="../manifest/person/myPrivilegeDetails.appcache">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>我的优惠</title>
+    <link href="../css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="../css/common.css" rel="stylesheet" type="text/css" />
+    <link href="../css/person.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="myRecRedpBg">
+<div class="main">
+    <div class="myPriDetTitle">
+        <h4>2015年第3季度和包购机优惠</h4>
+        <p>开始时间：2015-07-04 00:00:00</p>
+        <p>结束时间：2015-10-01 00:00:00</p>
+    </div>
+    <div class="myPriDetMain">
+        <p>您是本次“你购机，我补贴，买4G手机最高补贴1500元”活动的目标客户，只需承诺合约期内使用指定4G套餐和4G卡及达到相应抵消，购买活动机型，即可获赠购机专用积分（可抵扣购机款）和100元话费，最高可享受1500元购机补贴!本优惠每个号码和4G手机仅限办理一次，若您已办理其他4G终端优惠，则不能参与活动。</p>
+    </div>
+</div>
+</body>
+<script src="../js/lib/seajs/seajs.js"></script>
+<script type="text/javascript">
+    seajs.use(['jquery','JSBridge','main','tmpl'], function(a) {
+        seajs.use("../js/"+SCRIPT_PATH+"/model/person/myPrivilegeDetails");
+    });
+</script>
+
+</html>

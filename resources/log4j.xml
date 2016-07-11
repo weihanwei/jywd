@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration PUBLIC "-//LOGGER" "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<appender name="stdout" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%-5p] (%c:%L) %x - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="fileinfo" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="/logs/lenovo/jywd/info.log" />
+		<param name="Append" value="true" />
+		<param name="MaxFileSize" value="2048KB" />
+		<param name="MaxBackupIndex" value="2" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-d{yyyy-MM-dd HH:mm:ss} [%c]-[%p] %m%n" />
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMin" value="INFO" />
+			<param name="LevelMax" value="INFO" />
+		</filter>
+	</appender>
+	
+	<root>
+
+		<appender-ref ref="fileinfo"/>
+		
+	</root>
+	
+</log4j:configuration>

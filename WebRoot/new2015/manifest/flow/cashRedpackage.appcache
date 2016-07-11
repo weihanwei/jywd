@@ -1,0 +1,17 @@
+CACHE MANIFEST
+# 2016-1-22 v77.77.77
+CACHE:
+	#image
+	../../images/flow/buybg.png
+    #css
+    ../../css/reset.css
+    ../../css/common.css
+    ../../css/flow.css
+	#javascript
+
+
+NETWORK:
+*
+	
+FALLBACK:
+	

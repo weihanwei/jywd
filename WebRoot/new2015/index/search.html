@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html manifest="../manifest/index.appcache">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport"
+          content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <title>搜索</title>
+    <link href="../css/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/index.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="main">
+    <div class="search">
+        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+            <tr>
+                <td>
+                    <div class="searchInput">
+                        <input type="text" name="search" placeholder="请输入关键字搜索" class="J_footHide" value=""/>
+                    </div>
+                </td>
+                <td>
+                    <span class="searchBtn f-r">搜索</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <ul class="searchNav">
+        <li class="on">全部</li>
+        <li>4G专区</li>
+        <li>流量专区</li>
+        <li>宽带专区</li>
+        <li>通话专区</li>
+    </ul>
+    <div class="searchMain pr">
+
+
+        <div class="searchNo">
+            <i class="bg-cover"></i>
+
+            <p>请输入关键字搜索</p>
+
+            <p>enter your text to search</p>
+        </div>
+        <!--no result start-->
+        <div class="nomain hide">很抱歉，搜索不到您要的结果！</div>
+        <!--no result end-->
+
+        <!--result start-->
+        <div class="left-icon-list hide">
+            <ul>
+                <li class="icon-jt-right">
+                    <a href="javascript:">
+                        <span class="icon"><img src="../images/icons/01.png"></span>
+
+                        <p>4G专区</p>
+
+                        <p class="text-overflow">4G上网套餐、4G随心王...</p>
+                    </a>
+                </li>
+                <li class="icon-jt-right">
+                    <a href="javascript:">
+                        <span class="icon"><img src="../images/icons/02.png"></span>
+
+                        <p>流量专区</p>
+
+                        <p class="text-overflow">手机流量套餐、手机流量...</p>
+                    </a>
+                </li>
+                <li class="icon-jt-right">
+                    <a href="javascript:">
+                        <span class="icon"><img src="../images/icons/03.png"></span>
+
+                        <p>通话专区</p>
+
+                        <p class="text-overflow">短号网、亲友网、通话红...</p>
+                    </a>
+                </li>
+                <li class="icon-jt-right">
+                    <a href="javascript:">
+                        <span class="icon"><img src="../images/icons/04.png"></span>
+
+                        <p>宽带专区</p>
+
+                        <p class="text-overflow">在线续费、宽带小区地址...</p>
+                    </a>
+                </li>
+                <li class="icon-jt-right">
+                    <a href="javascript:">
+                        <span class="icon"><img src="../images/icons/10.png"></span>
+
+                        <p>购4G手机</p>
+
+                        <p class="text-overflow">话费充值、流量充值</p>
+                    </a>
+                </li>
+                <li class="icon-jt-right">
+                    <a href="javascript:">
+                        <span class="icon"><img src="../images/icons/11.png"></span>
+
+                        <p>精品下载</p>
+
+                        <p class="text-overflow">和生活、和地图...</p>
+                    </a>
+                </li>
+                <li class="icon-jt-right">
+                    <a href="javascript:">
+                        <span class="icon"><img src="../images/icons/08.png"></span>
+
+                        <p>实名登记</p>
+
+                        <p class="text-overflow">提交身份证信息实名认证</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--result end-->
+    </div>
+</div>
+
+</body>
+<script src="../js/lib/seajs/seajs.js"></script>
+<script type="text/javascript">
+    seajs.use(['jquery', 'JSBridge', 'main'], function (a) {
+        seajs.use("../js/" + SCRIPT_PATH + "/model/index/search");
+    });
+</script>
+
+</html>

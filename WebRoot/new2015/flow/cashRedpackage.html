@@ -1,0 +1,54 @@
+<!DOCTYPE>
+<html manifest="../manifest/flow/cashRedpackage.appcache">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>兑换流量红包</title>
+    <link href="../css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="../css/common.css" rel="stylesheet" type="text/css" />
+    <link href="../css/flow.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="main buybodybg">
+    <div class="buybg">
+        <img src="../images/flow/buybg.png" alt="图片" />
+    </div>
+    <div class="buyHead">
+        <em>1</em>
+        <span>输入揭阳移动号码</span>
+        <em>2</em>
+        <span>点击确认兑换</span>
+    </div>
+    <div class="buyMain">
+        <div class="buyMainbg"></div>
+        <div class="buyMainTab">
+            <div class="cashMain">
+                <input type="text" name="number" placeholder="请输入使用红包流量的号码" value="" class="cashInput J_footHide" />
+                <div class="cashFlow"><span>10</span>MB</div>
+                <p>（来自好友阿里郎的传说）</p>
+            </div>
+            <div class="cashDeadline">于2015/7/28 23:01 前兑换有效，兑换后20天内使用有效。</div>
+        </div>
+    </div>
+    <a href="cashSuccessed.html" class="buyVerifyBtn">确认兑换至此号码</a>
+    <div class="openMain">
+        <div class="openTitle">流量红包兑换规则：</div>
+        <p>1、仅支持兑换流量到揭阳移动客户号码，其中4G随心王客户、未实名登记/未更换4G USIM客户及转品牌未生效客户无法参加。</p>
+        <p>2、抢到的红包流量须在7天内兑换给揭阳移动号码，逾期未兑换的红包流量将在24小时内自动兑换到红包发起者绑定的号码。</p>
+        <p>3、兑换成功后的流量立即生效，有效期至下一月结日。</p>
+        <p>4、该红包流量为省内通用流量，可用于2G/3G/4G网络。</p>
+    </div>
+    <div class="h2em"></div>
+</div>
+
+</body>
+<script src="../js/lib/seajs/seajs.js"></script>
+<script type="text/javascript">
+    seajs.use(['jquery','JSBridge','main','tmpl'], function(a) {
+        seajs.use("../js/"+SCRIPT_PATH+"/model/person/redpackage");
+    });
+</script>
+
+</html>

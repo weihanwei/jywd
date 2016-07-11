@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache updateCheck="false" name="defaultCache">
+
+	<diskStore path="../temp/ehcache" />
+
+	<!--  
+	<defaultCache maxEntriesLocalHeap="100" eternal="false"
+		timeToIdleSeconds="30" timeToLiveSeconds="30" overflowToDisk="true"
+		maxEntriesLocalDisk="100000" />-->
+		
+	
+	<cache name="merchandiseCache" maxElementsInMemory="10000"
+		maxEntriesLocalHeap="100000" overflowToDisk="true" timeToLiveSeconds="3600" timeToIdleSeconds="3600"
+		eternal="true" memoryStoreEvictionPolicy="LFU">
+	</cache>
+	
+	<cache name="QRCodeCache" maxElementsInMemory="10000"
+		maxEntriesLocalHeap="100000" overflowToDisk="true" timeToLiveSeconds="602800" timeToIdleSeconds="602800"
+		eternal="false" memoryStoreEvictionPolicy="LFU">
+	</cache>
+	
+	<!-- weChat token and jsapiTicket -->
+	<cache name="token_jsapiTicket" maxElementsInMemory="10000"
+		maxEntriesLocalHeap="100000" overflowToDisk="true" timeToLiveSeconds="7180" timeToIdleSeconds="7180"
+		eternal="false" memoryStoreEvictionPolicy="LFU">
+	</cache>
+	<!--
+	<cache name="testExpired" maxElementsInMemory="10000"
+		maxEntriesLocalHeap="100000" overflowToDisk="true" timeToLiveSeconds="10" timeToIdleSeconds="10"
+		eternal="false" memoryStoreEvictionPolicy="LFU">
+		<cacheEventListenerFactory class="com.highversion.listener.EhcacheListenerFactory" />
+	</cache>
+	  -->
+    
+	
+
+</ehcache>

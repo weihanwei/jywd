@@ -1,0 +1,15 @@
+CACHE MANIFEST
+# 2016-1-22 v77.77.77
+CACHE:
+	#image
+
+    #css
+    ../../css/reset.css
+    ../../css/common.css
+    ../../css/flow.css
+	#javascript
+NETWORK:
+*
+	
+FALLBACK:
+	

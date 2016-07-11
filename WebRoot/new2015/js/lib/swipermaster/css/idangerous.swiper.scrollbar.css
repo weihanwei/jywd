@@ -1,0 +1,104 @@
+.swiper-scrollbar {
+	border-radius: 10px;
+	position: relative;
+	-ms-touch-action: none;
+	background: rgba(0,0,0,0.1)
+}
+.swiper-scrollbar-drag {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	background: rgba(204,89,34,0.85);
+	border-radius: 10px;
+}
+.swiper-scrollbar-cursor-drag {
+	cursor: move;
+}
+
+
+/*套餐*/
+
+/*办理套餐最新*/
+.bl_taocan_detail{ margin-bottom:1em; position:relative;}
+.bl_taocan_detail .btc_list_item{ }
+.bl_taocan_detail .btc_list_item .ads_row{}
+.bl_taocan_detail .btc_list_item .ads_c_6{ text-align:center; line-height:120%; padding:0.25em 0; color:#898a8f; font-size:1.25em;float:none; display:table-cell; border-bottom:1px solid #dbdbdb}
+.btc_list_item{ position:relative; border:1px solid #dbdbdb; border-radius:0.25em; -webkit-border-radius:0.25em; width:100%;}
+.btc_list_item:after{ position:absolute; left:50%; height:100%; width:1px; background:#dbdbdb; top:0px; margin-left:-1px}
+/*
+.bl_taocan_detail .btc_list_item .ads_row:first-child .ads_c_6:nth-child(1){ border-radius:0.25em 0 0 0; -webkit-border-radius:0.25em 0 0 0; }
+.bl_taocan_detail .btc_list_item .ads_row:first-child .ads_c_6:nth-child(2){ border-radius:0 0.25em 0 0 ; -webkit-border-radius: 0 0.25em 0 0; }
+.bl_taocan_detail .btc_list_item .ads_row:last-child .ads_c_6:nth-child(1){ border-bottom:1px solid #dbdbdb; border-radius:0 0 0 0.25em ; -webkit-border-radius:0 0 0 0.25em; }
+.bl_taocan_detail .btc_list_item .ads_row:last-child .ads_c_6:nth-child(2){ border-bottom:1px solid #dbdbdb; border-radius:0 0  0.25em 0; -webkit-border-radius: 0 0  0.25em 0; }
+*/
+.bl_taocan_detail .btc_list_item .ads_row:last-child .ads_c_6{ border-bottom:none}
+
+.bl_taocan_detail:nth-child(1n) .ads_row .ads_c_6:nth-child(1){ background:#e8eff7}
+.bl_taocan_detail:nth-child(2n) .ads_row .ads_c_6:nth-child(1){ background:#f0f3ea}
+.bl_taocan_detail:nth-child(3n) .ads_row .ads_c_6:nth-child(1){ background:#fbeee8}
+.bl_taocan_detail:nth-child(4n) .ads_row .ads_c_6:nth-child(1){ background:#f8e9ec}
+.bl_taocan_detail:nth-child(5n) .ads_row .ads_c_6:nth-child(1){ background:#fffee5}
+.bl_taocan_detail:nth-child(6n) .ads_row .ads_c_6:nth-child(1){ background:#ececec}
+
+
+
+.bl_taocan_detail .btitle{ padding-left:2em; position:relative; line-height:2em; font-size:1.5em; color:#807e7f}
+.bl_taocan_detail .btitle:after{ width:0.5em; height:0.5em; border-radius:0.25em; background:#cc5922; top:50%; margin-top:-0.125em; position:absolute; left:1.2em;}
+
+
+.tc_detail_table{ float:left; width:95% !important;}
+.tc_detail_table .ads_item{  text-align:center; display:table-cell; vertical-align:middle;}
+.ads_item_block{border:1px solid #d5d5d5; display:table-cell; vertical-align:middle; border-top:none; border-bottom:none; position:relative}
+.tc_detail_table .text{ width:140px;  overflow:hidden; padding:0.5em 0; margin:0 auto; line-height:100%; white-space:nowrap;}
+.tc_detail_table .text2{ width:4px; overflow:hidden}
+.tc_detail_table .ads_item{ border-left:1px solid #d5d5d5; position:relative; color:#828081; display:none}
+.tc_detail_table .ads_item:after{ border-bottom:1px solid #d5d5d5; position:absolute; left:15%; width:70%; bottom:0px;}
+.tc_detail_table .ads_item:first-child{ border-left:none}
+.ads_item_block_nobor{ border:none;}
+.tc_detail_table .ads_row:nth-child(1) .ads_item:nth-child(1){ font-size:1em; }
+.tc_detail_table .ads_row:nth-child(1) .ads_item_block{ font-size:1em;}
+
+.tc_detail_table .ads_row:nth-child(1) .ads_item_block:nth-child(1){border-bottom:1px solid #d5d5d5; border-top:1px solid #d5d5d5  ;white-space:nowrap;}
+.tc_detail_table .ads_row:nth-child(1) .ads_item_block:nth-child(3){border-bottom:2px solid #ef8d28; border-top:1px solid #d5d5d5; white-space:nowrap}
+.tc_detail_table .ads_row:nth-child(1) .ads_item_block:nth-child(5){border-bottom:2px solid #285e9c; border-top:1px solid #d5d5d5;white-space:nowrap}
+.tc_detail_table .ads_row:nth-child(1) .ads_item_block:nth-child(7){border-bottom:2px solid #50b349; border-top:1px solid #d5d5d5;white-space:nowrap}
+
+
+.tc_detail_table .ads_row:nth-child(1n) .ads_item_block:nth-child(1){ background:#fbeee8}
+
+.tc_detail_table .ads_row:nth-child(1) .ads_item_block:nth-child(1) .ads_item:after{ display:none}
+.tc_detail_table .ads_row:nth-child(1) .ads_item_block:nth-child(3) .ads_item:after{ display:none}
+.tc_detail_table .ads_row:nth-child(1) .ads_item_block:nth-child(5) .ads_item:after{ display:none}
+.tc_detail_table .ads_row:nth-child(1) .ads_item_block:nth-child(7) .ads_item:after{ display:none}
+
+.tc_detail_table .ads_row:nth-child(1) .ads_item_block:nth-child(1) .ads_item:nth-child(1){color:#7f7774;}
+.tc_detail_table .ads_row:nth-child(1) .ads_item_block:nth-child(3) .ads_item:nth-child(1){color:#ef8d28;}
+.tc_detail_table .ads_row:nth-child(1) .ads_item_block:nth-child(5) .ads_item:nth-child(1){color:#285e9c;}
+.tc_detail_table .ads_row:nth-child(1) .ads_item_block:nth-child(7) .ads_item:nth-child(1){color:#50b349;}
+
+
+.tc_detail_table .ads_row:last-child .ads_item_block:nth-child(1){ border-bottom:1px solid #d5d5d5  }
+.tc_detail_table .ads_row:last-child .ads_item_block:nth-child(3){ border-bottom:1px solid #d5d5d5}
+.tc_detail_table .ads_row:last-child .ads_item_block:nth-child(5){border-bottom:1px solid #d5d5d5}
+.tc_detail_table .ads_row:last-child .ads_item_block:nth-child(7){ border-bottom:1px solid #d5d5d5}
+
+.tc_detail_table .ads_row:last-child .ads_item_block:nth-child(1) .ads_item:after{ display:none}
+.tc_detail_table .ads_row:last-child .ads_item_block:nth-child(3) .ads_item:after{ display:none}
+.tc_detail_table .ads_row:last-child .ads_item_block:nth-child(5) .ads_item:after{ display:none}
+.tc_detail_table .ads_row:last-child .ads_item_block:nth-child(7) .ads_item:after{ display:none}
+
+.tc_detail_table .ads_row .ads_item_block .ads_item:nth-child(1){ display:table-cell; width:25%}
+.tc_detail_table .text{ width:100%; }
+.tc_detail_table_hover { display:table; float:left;}
+.tc_detail_table_hover .ads_row .ads_item_block .ads_item{ display:table-cell; width:auto;}
+.tc_detail_table_hover .text{ width:100px !important; white-space:inherit;}
+
+.tc_detail_table_hover  .text3{ width:4em; background:#f00;}
+
+
+.tc_detail_table_hover .btn_more_table_close{ display:block;}
+.hline{ background:#efeef3; height:1em; margin:0 -1em}
+
+.pro_detail{ padding:0 2em; line-height:180%; color:#868686}
+
+.tc_detail_table_title{ float:left; width:auto !important; background:#fff !important; position:absolute; z-index:111; display:none}

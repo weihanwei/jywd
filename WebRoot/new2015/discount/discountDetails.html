@@ -1,0 +1,62 @@
+<!DOCTYPE>
+<html manifest="../manifest/index.appcache">
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport"
+          content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <title>专享特惠详情</title>
+    <link href="../css/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/swiper.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/discount.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="main pr">
+    <!--bananer start-->
+    <div class="banner pr">
+        <div class="swiper-container" id="slider">
+            <ul class="swiper-wrapper" style="height:auto">
+                <li class="swiper-slide">
+                    <img src="../images/PIC/pic2.jpg" />
+                </li>
+                <li class="swiper-slide">
+                    <img src="../images/PIC/pic2.jpg" />
+                </li>
+                <li class="swiper-slide">
+                    <img src="../images/PIC/pic2.jpg" />
+                </li>
+            </ul>
+            <div class="swiper-pagination banner-pagination"></div>
+        </div>
+    </div>
+    <!--bananer end-->
+
+    <div class="disDetail">
+        <div class="disDetHead">
+            <div class="disDetTitle">存量用户转58+套餐预存赠送话费优惠</div>
+            <p>业务类型：预存优惠</p>
+            <p>开始时间：2015-07-04 00:00:00</p>
+            <p>结束时间：2015-10-01 00:00:00</p>
+        </div>
+        <div class="disDetMain">
+            <div class="disDetMainTitle">活动内容</div>
+            <p>尊敬的客户：</p>
+            <p class="disText">您是揭阳移动优惠活动幸运客户，您只需操作两步，即可获赠250元话费和600MB省内通用流量。第一步：9月30日前完成实名登记，并办理58元或以上4G套餐并承诺使用10个月。第二步：移步营业厅更换4G USIM卡（若已是4G USIM卡则无需更换）并预存100元话费办理该方案。您可发206至10086查询预存优惠内容，也可前往营业厅进行咨询办理。本次优惠仅能办理一次，先到先得，办完即止。中国移动！</p>
+        </div>
+    </div>
+    <div class="footerBtn">
+        <div class="main">
+            <a href="#" class="greenBtn">在线办理</a>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/lib/seajs/seajs.js"></script>
+<script type="text/javascript">
+    seajs.use(['jquery','JSBridge','main','swiper'], function(a) {
+        seajs.use("../js/"+SCRIPT_PATH+"/model/index/index");
+    });
+</script>
+</html>

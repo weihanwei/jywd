@@ -1,0 +1,1 @@
+define(function(a){$("input[name=logintype]").change(function(){var a=$(this).val();$(".showContent").eq(a).addClass("show").removeClass("hide").siblings(".showContent").removeClass("show").addClass("hide")})});

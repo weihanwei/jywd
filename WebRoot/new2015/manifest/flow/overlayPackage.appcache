@@ -1,0 +1,15 @@
+CACHE MANIFEST
+# 2015-09-06 v3.3.4
+CACHE:
+	#�������Ӱ�
+	../../images/flow/banner01.jpg
+	../../images/common/overlaydrawbg.png
+	../../images/common/drawicon.png
+	../../images/common/overlaydrawicon.png
+	../../images/common/drawbtnicon.png
+
+NETWORK:
+*
+	
+FALLBACK:
+	

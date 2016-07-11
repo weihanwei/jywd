@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport"
+          content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <title>APP下载</title>
+    <link href="../css/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/common.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="main">
+    <div class="outMain">
+        <h2>温馨提示</h2>
+        <p>请点击微信右上角按钮，然后再弹出的菜单中，点击在Safari中打开，即可安装</p>
+    </div>
+    <div class="outImg">
+        <img src="../images/appDownload/pic01.jpg" />
+    </div>
+    <div class="outFoot">
+        <a href="#" class="blueBtn">点击安装</a>
+    </div>
+</div>
+</body>
+<script src="../js/lib/seajs/seajs.js"></script>
+<script type="text/javascript">
+    seajs.use(['jquery','JSBridge','main'], function(a) {
+//        jy.innertHead('APP下载');
+
+        jy.innertFood(1);
+
+    });
+</script>
+</html>

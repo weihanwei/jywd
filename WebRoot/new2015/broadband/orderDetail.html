@@ -1,0 +1,83 @@
+<!DOCTYPE>
+<html manifest="../manifest/index.appcache">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport"
+          content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <title>订单详情</title>
+    <link href="../css/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/broadband.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="main">
+    <div class="pd1em broadband-index">
+        <div class="payChoose">
+            <div class="qopTitle">账号信息：</div>
+            <div class="h1em"></div>
+            <ul class="payList">
+                <li>
+                    宽带账号：<span>3850006789</span>
+                </li>
+                <li>
+                    宽带类型：<span>独立宽带</span>
+                </li>
+                <li>
+                    用户名：<span>陈**</span>
+                </li>
+                <li>
+                    绑定手机：<span>138********</span>
+                </li>
+                <li>
+                    订单状态：<span>订单办理成功</span>
+                </li>
+                <li>
+                    安装地址：<span>揭阳市东升街道资源明秋3懂</span>
+                </li>
+            </ul>
+            <div class="h1em"></div>
+            <div class="qopTitle">套餐信息：</div>
+            <div class="h1em"></div>
+            <ul class="payList">
+                <li>
+                    套餐名称：<span>[4M]光宽带包年360元赠送一年使用</span>
+                </li>
+                <li>
+                    套餐开始时间：<span>2016-5-1</span>
+                </li>
+                <li>
+                    套餐结束时间：<span>2017-5-1</span>
+                </li>
+                <li>
+                    套餐类型：<span>独立宽带</span>
+                </li>
+                <li>
+                    套餐介绍：<span class="payIntroduce">中国移动宽带覆盖区域，客户可享受4M 宽带包年赠送一年使用期优惠（合计使用 24个月）。</span>
+                </li>
+                <li>
+                    套餐费用：<span>360元</span>
+                </li>
+                <li>
+                    套餐带宽：<span>36M</span>
+                </li>
+            </ul>
+        </div>
+        <div class="h2em"></div>
+        <a href="javascript:" class="aBtn aBtn-blue"><span class="fem-12">提交</span></a>
+
+        <div class="h2em"></div>
+    </div>
+
+</div>
+
+</body>
+<script src="../js/lib/seajs/seajs.js"></script>
+<script type="text/javascript">
+    seajs.use(['jquery', 'JSBridge', 'main'], function (a) {
+        jy.navShow(".broadNav ul li", ".broadshow")
+    });
+</script>
+
+</html>

@@ -1,0 +1,15 @@
+CACHE MANIFEST
+# 2015-12-31 v3.3.4
+CACHE:
+	#images
+    #css
+    ../../css/reset.css
+    ../../css/common.css
+	#javascript
+
+
+NETWORK:
+*
+	
+FALLBACK:
+	

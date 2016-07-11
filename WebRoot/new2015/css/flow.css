@@ -1,0 +1,207 @@
+﻿@charset "utf-8";
+.overEll{white-space:nowrap; text-overflow: ellipsis;}
+.bodybg{background-color: #f1f1f1;}
+
+/*--index.html--*/
+.barBorder{border-bottom: 1px solid #aeaeae;}
+.adv-table-wrap{ padding: 1em 0;}
+.flowTab{width: 100%; overflow: hidden; background-color: #fff;}
+.flowTab tr td{width: 50%; padding: .5em 1em;}
+.flowTab tr td p{font-size: 0.75em; line-height: 140%;}
+.fRedpackage{border-right: 1px solid #cecece; position: relative; vertical-align: top;}
+.fPackage{vertical-align:text-top; border-bottom: 1px solid #cecece;}
+.flowTitle{font-size: 1em; line-height: 130%;}
+.fRedpackage a .flowTitle{color: #e6332d; padding: 0.5em 0;}
+.fRedpackage a .blue{color: #084878;}
+.fRedpackage a .blue + p{color: #999; padding: 0;}
+.fRedpackage a p{color: #2b2b2b; padding: 0.5em 0;}
+.fRedpackage a .flowImg{width: 100%; overflow: hidden; border: 1px solid #cecece;}
+.fMain{width: 60%; overflow: hidden; float: left;}
+.fPackage a .flowTitle{color: #844987; padding: 0.2em 0 0.4em;}
+.fPackage a p{color: #9d9d9d;}
+.fAdd a .flowTitle{color: #084878; padding: 0.2em 0 0.8em;}
+.fAdd a p{color: #9d9d9d;}
+.fPackage a .flowImg{overflow: hidden; float: right; position: relative;}
+.fPackage a .flowImg{width: 40%; padding: .4em 0 0 1em;}
+.fAdd a .flowImg{width: 40%; padding: 1.5em 0 0 1em;}
+.fAdd a .flowImg img{width: 150%; margin-left: -50%;}
+
+/*--package.html--*/
+.package{width: 100%; overflow: hidden; border-top: 1px solid #a7a7a7;}
+.package li{width: 97%; margin-left: 3%; border-bottom: 1px solid #a7a7a7; padding: 1em 0;}
+.packageText{width: 100%; overflow: hidden; padding: 0 5.6em 0 4.2em;}
+.packageImg{left: 0; top: 50%; margin-top: -2.7em; width: 4em; height: 5.4em; overflow: hidden; text-align: left;}
+.packageImgBox{display: table-cell; vertical-align: middle; width: 100%; height: 5.4em; overflow: hidden; text-align: center;}
+.packageImgBox img{max-width: 4em; vertical-align: middle;}
+.packageBtn{right: 0; top: 50%; margin-top: -2.5em; width: 6em; height: 5em; overflow: hidden; text-align: center;}
+.pHandleBtn{padding: 0.6em 1.2em; margin-top: 1.6em; margin-left: -1em; border-radius: 0.4em; display: inline-block; background-color: #91c400; font-size: 1em; color: #fff; }
+.packageMain{width: 100%; overflow: hidden; text-align: left; line-height: 130%; color: #f28f18;}
+.packageMain h2{ font-size: 1.3em; line-height: 1.4em; color: #2b2b2b; font-weight: normal;}
+.hint{position: absolute; right: -0.7em; top: 2.5em; color: #e2006c;}
+.packageNew.package li{padding: 0;}
+.packageNew .packageMain{padding: 0.5em 0; color: #2b2b2b; line-height: 140%;}
+.packageNew .packageMain h5{font-size: 1em; font-weight: normal; color: #333;}
+.packageNew .packageMain p{font-size: 0.75em; color: #999;}
+
+/*--packageDetails.html--*/
+.pDetHead{width: 100%; overflow: hidden; background-color: #55aced; padding: 1.5em 0;}
+.pDetHeadImg{width: 22%; overflow: hidden; padding: 1em 0 0 4%;}
+.pDetHeadMain{width: 74%; padding-left: 4%; font-size: 1em; line-height: 1.3em; color: #fff;}
+.pDetHeadMain h3{font-size: 1.3em; line-height: 2em; font-weight: normal;}
+.pDetMain{padding: 1em 1em 4.5em; min-height: 20em;}
+.pDetTitle{font-size: 1.7em; line-height: 1.7em; color: #55aced;}
+.pDetText{width: 100%; overflow: hidden; padding: 1em 0 1.5em; color: #454545; font-size: 1.4em; line-height: 1.4em; text-align: justify;}
+.pDetText p:first-child{text-indent: 24px;}
+.pDetLittleTitle{color: #e62c89; padding: 2em 0 1em;}
+.pDetFooter{width: 100%; overflow: hidden; padding: 1.5em 4%; background-color: #fff; position: fixed; bottom: 0; left: 0;}
+.pDetBtn{width: 100%; border-radius: 0.4em; text-align: center; font-size: 1.4em; line-height: 2.4em; color: #fff; background-color: #90bd48; display: block;}
+
+/*--overlayPackage.html 流量叠加包--*/
+.oveContent{width: 100%; overflow: hidden; padding-bottom: 2em;}
+.oveText{ width: 100%; overflow: hidden; padding: 0.7em 1em 2em; font: bold 1.25em/1.25em "微软雅黑"; text-align: center; color: #e1006c;}
+
+/*--redpackage.html 流量红包--*/
+.redpbg{background-color: #fef7cd;}
+.redpHead{width: 100%; height: auto;}
+.redpBtn{width: 254px; height: 47px; background: url("../images/flow/redBtn.png") no-repeat center center; display: block; margin: 1em auto; position: relative; text-align: center; font: 17px/47px "微软雅黑"; color: #fff;}
+.redpNav{width: 86%; overflow: hidden; margin: 0 auto;}
+.redpNav li{width: 31%; border: 1px solid #e73533; border-radius: 0.4em 0.4em 0 0; background-color: #e73533; font-size: 1em; line-height: 2.2em; color: #fff; text-align: center; margin-left: 1px; float: left; -webkit-text-size-adjust:none}
+.redpNav li.on{color: #e73533; background-color: #fff; border-bottom: 1px solid #fff;}
+.redpMain{width: 94%; overflow: hidden; border: 1px solid #e73533; border-radius: 0.5em; margin: -1px auto 1em;}
+.redpShow{width: 100%; min-height: 32px; overflow: hidden; background-color: #fff;}
+.redpShow table tr td{vertical-align: middle; color: #2b2b2b; font-size: 0.75em; line-height: 160%; padding: 0.5em 0; text-align: center; border-bottom: 1px solid #e73533; -webkit-text-size-adjust:none}
+.redpShow table tr td:first-child{font-size: 1em;}
+.redpShow table tr:last-child td{border-bottom: 0 none;}
+.redpRule{padding: 1em; font-size: 1em; line-height: 160%; color: #333; text-align: justify;}
+.redpTitle{font-size: 1em; font-weight: bold; color: #2b2b2b; padding-bottom: 0.5em;}
+.redpRule p{padding-bottom: 0.3em;}
+.redList{width: 6em; overflow:hidden; margin: 0 auto; white-space:nowrap; text-overflow:ellipsis;}
+
+
+/*--buyRedpackage.html 购买流量红包--*/
+.buybodybg{background-color: #e73533;}
+.buybg{padding-bottom: 0.5em;}
+.buyHead{font-size: 1em; color: #fff; text-align: center; line-height: 2em;}
+.buyHead em{width: 2em; height: 2em; display: inline-block; border-radius: 1em; font-style: normal; background-color: #a31b1f;}
+.buyHead span{line-height: 2em; padding-right: 0.5em;}
+.buyMain{width: 92.5%; overflow: hidden; position: relative; left: 3.75%; border-radius: 0.5em; margin: 1em 0 2em;}
+.buyMainbg{width: 100%; height: 100%; background-color: #fff; opacity: 0.8; border-radius: 0.5em; position: absolute; left: 0; top: 0;}
+.buyMainTab{width: 100%; height: auto; position: relative; z-index: 99;}
+.buyMainTab td{font-size: 1.25em; color: #ce6c00; vertical-align: top; padding: 0.4em 0;}
+.buyMainTab tr:first-child td{padding-top: 1em;}
+.buyMainTab tr:last-child td{padding-bottom: 1em;}
+.buyMainTab tr:last-child td:last-child{color: #2b2b2b;}
+.buyMainTab tr td:first-child{padding-left: 5%; padding-right: 2%; width: 24%;}
+.buyType{width: 100%; overflow: hidden;}
+.buyType li{width: 30%; height: auto;}
+.buyType li input[type="radio"]{display: none;}
+.buyType li input[type="radio"] + label{width: 90%; display: inline-block; background-color: #fff; border: 1px solid #aaa; text-align: center; color: #2b2b2b; line-height: 1.6em; margin-bottom: 0.4em; float: left;}
+.buyType li input[type="radio"]:checked + label{ border: 1px solid #e73533; background: #fff url("../images/flow/buyChecked.png") no-repeat right bottom; background-size: 100%;}
+.buyVerifyBtn{width: 88%; display: block; font-size: 1.4em; line-height: 2.4em; text-align: center; color: #fff; background-color: #a31b1f; margin: 0 auto; border-radius: 0.2em;}
+.buySureReg{width: 88%; overflow: hidden; margin:2em auto 0;}
+.buySureReg input[type="checkbox"]{display: none;}
+.buySureReg input[type="checkbox"] + label{font-size: 1em; line-height: 3em; color: #f1d142; padding-left: 2em; position: relative;}
+.buySureReg input[type="checkbox"] + label:before{width: 1.4em; height: 1.4em; border: 1px solid #c8c8c8; background-color: #fff; border-radius: 0.3em; box-sizing: border-box; -webkit-box-sizing: border-box; background-color: #fff; position: absolute; left: -0.2em; top: -0.1em;}
+.buySureReg input[type="checkbox"]:checked + label:before{background-color: #90bd48; background-clip: content-box; -webkit-background-clip: content-box; border: 3px solid #fff; position: absolute;}
+.buySureReg p{line-height: 140%; color: #fff; padding-bottom: 0.5em;}
+
+/*--buySuccessed.html 购买红包成功--*/
+.buyed{text-align: center; color: #2b2b2b; line-height: 2em;}
+.buyedTitle{font-size: 2.5em; padding: 0.2em 0 0.4em;}
+.buyed .pd1em p{font-size: 1.25em;}
+.buyed .pd1em p span{color: #e1006c;}
+.buyedText{padding: 1.2em 0; font-size: 0.5em; text-align: justify;}
+
+/*--openRedpackage.html 打开红包--*/
+.openbodybg .main{background-color: #e73533;}
+.openTopImg{width: 100%; height: auto;}
+.openBtn{width: 30%; height: 100%; display: inline-block; position: absolute; top: 0; left: 50%; margin-left: -15%; z-index: 9999;}
+.openMain{width: 88%; height: auto; padding: 2em 0; margin: 0 auto;}
+.openTitle{font-size: 1.25em; color: #f1d142; line-height: 1.5em; padding-bottom: 1em;}
+.openMain p{font-size: 1em; line-height: 140%; color: #fff; text-align: justify; padding-bottom: 0.3em;}
+.openContent{padding: 4em 1em 1em; text-align: center; font-size: 1em; color: #fff; line-height: 140%;}
+
+/*--receiveRedpackage.html 领取红包--*/
+.receMarB{margin-bottom: 1.4em;}
+.receMain{width: 90%; height: 100%; position: absolute; left: 5%; top: 0; text-align: center; color: #fff;}
+.receTitle{font-size: 2.5em; line-height: 100%; padding: 1.3em 0 0.5em;}
+.receMain p{font-size: 0.75em; line-height: 200%;}
+.receFlow{font-size: 3em; color: #f1d142; line-height: 200%;}
+.receFlow span{font-size: 0.6em;}
+
+/*--cashRedpackage.html 流量红包兑换--*/
+.cashMain{width: 100%; overflow: hidden; padding: 0.8em 2%;}
+.cashInput{width: 99%; padding: 0.8em 4% !important; border: 1px solid #8d8d8d !important; background-color: #fff !important; border-radius: 4px; font-size: 1em; line-height: 120%; color: #2b2b2b;}
+.cashFlow{color: #2b2b2b; font-size: 1.25em; line-height: 1.75em; padding-top: 1em;}
+.cashFlow span{color: #a31b1f; font-size: 1.75em;}
+.cashFlow p{color: #2b2b2b; font-size: 1em;}
+.cashDeadline{width: 96%; height: auto; margin: 0 auto; padding: 0.5em 0 1em; border-top: 1px solid #a1a1a1; font-size: 1em; line-height: 150%; color: #2b2b2b;}
+
+/*--cashSuccessed.html 流量红包兑换成功--*/
+.cashText{width: 75%; margin: 0 auto;}
+
+
+/*--shareRedpackage.html 流量红包分享--*/
+.sharTip{padding: 1em; margin-bottom: 1em; position: relative; background-color: #fff;}
+.sharTip:after{width: 0; height: 0; border-width: 1em; border-style: solid; border-color: #fff transparent transparent; position: absolute; bottom: -2em; left: 50%; margin-left: -0.5em;}
+.sharTip p{font-size: 1em; line-height: 160%; color: #0085ce;}
+.shareMain{padding: 1em; font-size: 1em; line-height: 150%; color: #0085ce;}
+.shareBtnPad{padding: 3em 1em 1em;}
+.shareMList{width: 100%; overflow: hidden;}
+.shareMList li{width: 100%; overflow: hidden; padding: 0.5em 0; border-bottom: 1px solid #ddd;}
+.shareMList li h3{font-size: 1em; color: #2b2b2b; font-weight: normal; line-height: 180%;}
+.shareMList li p{font-size: 0.75em; line-height: 140%; color: #949494;}
+.shareMList li p span{color: #f28f18;}
+
+/*--firstFree.html 流量叠加包首单免费--*/
+.fFContent{padding: 1em 1.5em;}
+.fFContent p,.fFTip{font-size: 1em; color: #e1006c; line-height: 100%;}
+.fFPackage{width: 100%; overflow: hidden; padding: 2em 0 1em;}
+.fFPackage li{width: 33.33333333%; overflow: hidden; padding: 0 0.5em 1em; float: left;}
+.fFPackage li input[type='radio']{display: none;}
+.fFPackage li input[type='radio'] + label{width: 100%; border: 1px solid #aeaeae; font-size: 1em; line-height: 2.5em; color: #2b2b2b; text-align: center; display: block;}
+.fFPackage li input[type='radio']:checked + label{background: url("../images/flow/fFchecked.png") no-repeat right bottom; background-size: 100%; -webkit-background-size: 100%;}
+.fFPackage li input[type='radio'] + label.gray{color: #fff;}
+.fFRule{padding: 0.5em 0.5em 2em;}
+.fFRuleTitle{width: 100%; font-size: 1.25em; line-height: 2.4em; color: #e1006c; border-radius: 0.4em 0.4em 0 0;}
+/*.fFRuleTitle:before{width: 0.6em; height: 0.6em; border: solid #fff; border-width: 2px 2px 0 0; transform: rotate(-45deg); -webkit-transform: rotate(-45deg); position: absolute; right: 1em; top: 50%; margin-top: -0.3em;}*/
+.fFMain{width: 100%; overflow: hidden; padding-top: 0.3em;}
+.fFTab th,.fFTab td{border: solid #aeaeae; border-width: 0 1px 1px; padding: 0.4em 0.2em; vertical-align: middle; font-size: 0.875em; line-height: 140%; text-align: center; color: #2b2b2b;}
+.fFTab th{border-top: 1px solid #aeaeae; background-color: #f1f1f1; color: #55aced;}
+.fFTab td:nth-child(3){text-align: left;}
+.fFTip{padding: 1em 0.5em; line-height: 140%;}
+.fFDown{font-size: 1em; color: #55aced; text-decoration: underline; padding-left: 2em;}
+.fFDown:after{width: 1em; height: 1em; background: url("../images/flow/downIcon.png") no-repeat center center; background-size: 100%; -webkit-background-size: 100%; position: absolute; left: 0.5em; bottom: 0;}
+
+.overTitle{color: #e1006c; font: bold 1em/1.25em "微软雅黑"; padding-bottom: 0.5em;}
+.overMain p{font-size: 0.75em; line-height: 140%; color: #666; padding-bottom: 0.5em;}
+
+/*noRedpackage.html*/
+.noRed{width: 100%; overflow: hidden; padding: 3em 1em 1em; font-size: 1.25rem; color: #333; text-align: center;}
+
+
+@media(max-width:600px) {
+    .adv-table td.left{ width:42.5%}
+    .openbodybg{background-color: #e73533;}
+}
+@media(max-width:560px) {
+    .adv-table td.left{ width:43%}
+}
+@media(max-width:480px) {
+    .adv-table td.left{ width:43%}
+}
+@media(max-width:360px) {
+    .adv-table td.left{ width:44%}
+}
+
+@media(min-width:640px) {
+    .packagePopup{left: 50%; margin-left: -300px;}
+    .redList{width: 8em;}
+}
+@media(min-width:560px) {
+    .redpBtn{width: 507px; height: 94px; font: 34px/94px "微软雅黑";}
+}
+@media(min-width:414px) {
+    .redpBtn{width: 380px; height: 70px; font: 24px/70px "微软雅黑";}
+}
+

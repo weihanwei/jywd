@@ -1,0 +1,72 @@
+<!DOCTYPE>
+<html manifest="../manifest/call/cornetNet.appcache">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>短号网详情</title>
+    <link href="../css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="../css/common.css" rel="stylesheet" type="text/css" />
+    <link href="../css/call.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="main">
+    <div class="relaBox">
+        <div class="relativeHead">
+            <span>我的短号：</span>
+            <input type="text" name="cornet" value="616620" class="J_footHide" />
+            <em class="relHeadBtn">修改</em>
+        </div>
+        <div class="relativeHead relHeadPadding">
+            <span>套餐：</span>
+            <select>
+                <option value="1">5元套餐</option>
+            </select>
+            <em class="relHeadBtn">修改</em>
+        </div>
+        <ul class="relativeMain">
+            <li>
+                <h5>集群详情</h5>
+                <p>（聚类客户）2001891111-揭阳集群网</p>
+            </li>
+        </ul>
+        <div class="footerBtn">
+            <div class="main">
+                <a href="#" class="blueBtn">修改</a>
+            </div>
+        </div>
+    </div>
+    <div class="relaBox hide">
+        <div class="relaNoHead">
+            <p>您尚未加入短号网！</p>
+            <div class="addInput">
+                <input type="text" name="addPhone" placeholder="请输入目标网号码" class="J_footHide" />
+            </div>
+            <span class="relaBtn">点击加入</span>
+        </div>
+        <ul class="relaNoNav">
+            <li class="on">商品介绍及资费</li>
+            <li>办理方式</li>
+        </ul>
+        <div class="relaCorBox">
+            <div class="relaCor">
+                <img src="../images/call/pic2.jpg" />
+            </div>
+            <div class="relaCor hide">
+                <img src="../images/call/pic2_1.jpg" />
+            </div>
+        </div>
+    </div>
+    <!--<div class="nomain hide">亲~您暂未开通集群网哦！</div>-->
+</div>
+
+</body>
+<script src="../js/lib/seajs/seajs.js"></script>
+<script type="text/javascript">
+    seajs.use(['jquery','JSBridge','main','tmpl'], function(a) {
+       seajs.use("../js/"+SCRIPT_PATH+"/model/call/cornetNet");
+    });
+</script>
+
+</html>

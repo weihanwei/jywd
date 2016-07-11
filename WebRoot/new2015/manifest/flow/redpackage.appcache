@@ -1,0 +1,12 @@
+CACHE MANIFEST
+# 2015-09-06 v3.3.4
+CACHE:
+	#�������
+	../../images/flow/redpbg.jpg
+	../../images/flow/receivebg.png
+
+NETWORK:
+*
+	
+FALLBACK:
+	

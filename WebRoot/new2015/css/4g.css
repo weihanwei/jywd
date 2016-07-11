@@ -1,0 +1,89 @@
+@charset "utf-8";
+body{ background:#fff}
+
+/*4G首页*/
+.icon-4gcard { width:1em; height:1em; background:url(../images/4g/icon_4gcard.png) no-repeat; display:inline-block; margin-right:0.5em; vertical-align:middle}
+.rcommend-4g{ background: #60b5f4;}
+.rcommend-4g .r4g-title{ background: #379ce7; line-height: 3em; padding-left:2.25em; color:#fff}
+.rcommend-4g  p{ padding-left:2.25em; line-height:170%; color:#fff}
+.rcommend-icon{ position:absolute; background:#ffef2f; color:#379ce7;  border:2px solid #fff; padding:0.5em; right:5%; top:50%; margin-top:-1.25em; transform:rotate(-17deg); -webkit-transform:rotate(-17deg);}  
+.adv-table-wrap{ padding-top:0}
+.adv-table{ width:100%;}
+.adv-table td{ vertical-align:bottom;}
+.adv-table td img{ margin-top:0.5em; border:1px solid #bbb;}
+.adv-table td.left:nth-child(1){ width:42%; padding-right:0.5em;}
+
+
+/*4g套餐*/
+.package-wrap{ position:relative}
+.package-wrap .left{ left:0; top:0px; width:28%; z-index:11;overflow: hidden;}
+.package-wrap .left:after{ position:absolute; left:0px; top:0px; width:100%; background:#f1f1f1; height:99999px; z-index:-1}
+
+.package-wrap .right{ padding-left:28%; border-top:1px solid #f1f1f1}
+.package-type{ background:#f1f1f1;}
+.package-type a{ display:block; text-align:center; line-height:170%; padding:1em 0; color:#1982d8}
+.package-type li.hover a,.package-type li a:active{ background:#55aced; color:#fff}
+
+
+.package-list li{ padding:1em 0; border-bottom:1px solid #c8c7cc; padding-left:1em}
+.package-list .icon{ width:100%; max-width:4em; display:block;}
+.package-list .handel_btn{ display:inline-block; background:#91c400; color:#fff; padding:0.75em 1em; white-space:nowrap}
+.package-name{ padding:0 5px; line-height:140%;}
+.package-info{ line-height:140%; padding:0.5em 5px 0;}
+.package-detail{ background:#55aced; color:#fff}
+.package-introduction{  color:#454545; min-height:20em}
+
+
+.btn_fixed{ position:fixed; bottom:4.5em; left:0px; width:100%; z-index:50; background:#fff}
+.btn_fixed_height{ height:4em;}
+
+/*--introduce.html 4G介绍--*/
+.intro,.intro > dd,.intrInner,.intrQMain{width: 100%; overflow: hidden;}
+.intro{padding-bottom: 1em;}
+.intro > dt{width: 100%; padding: 0.5em 1em; font-size: 1.25em; line-height: 2em; color: #fff; background-color: #268de2; border-top: 1px solid #41a4f5; border-bottom: 1px solid #0b6fbb;}
+.intro > dt:after{width: 0.5em; height: 0.5em; border: solid #fff; border-width: 0 2px 2px 0; transform: rotate(45deg); -webkit-transform: rotate(45deg); position: absolute; top: 1em; right: 1em;}
+.intro > dt.active:after{transform: rotate(225deg); -webkit-transform: rotate(225deg); top: 1.25em;}
+.intro > dt.active:before{width: 0.5em; height: 0.5em; background-color: #fff; transform: rotate(45deg); -webkit-transform: rotate(45deg); position: absolute; bottom: -0.3em; left: 1.5em;}
+.intro > dt i{width: 2em; height: 2em; margin-right: 1em; float: left; background: url("../images/4g/menu.png") no-repeat;}
+.intro > dt.active i{background: url("../images/4g/menu_on.png") no-repeat;}
+.intro > dt.intrFast i{background-position: center 0;}
+.intro > dt.intrDo i{background-position: center -2em;}
+.intro > dt.intrUse i{background-position: center -4em;}
+.intro > dt.intrQ i{background-position: center -6em;}
+.intro > dd p{font-size: 0.75em; line-height: 1.6em; color: #606060; text-indent: 24px; padding: 0.8em 0.5em;}
+.intrInner > dt{width: 100%; padding: 0 0.5em; color: #1392ee; font-size: 1em; line-height: 3em; background-color: #e0ebf1; border-bottom: 1px solid #d4e2e9;}
+.intrInner > dt:after{width: 0.5em; height: 0.5em; background-color: #fff; transform: rotate(45deg); -webkit-transform: rotate(45deg); position: absolute; bottom: -0.3em; left: 2em;}
+.intrInner > dd{width: 100%; padding: 0.5em 1em; font-size: 1em; line-height: 2em; color: #606060; border-bottom: 1px solid #e0ebf1;}
+.intrInner > dd i{width: 2em; height: 2em; margin-right: 1em; float: left;}
+.intrInner > dd span{color: #1392ee;}
+.intrInner > dd span em{font-size: 1.6em;}
+.intrDoMain{width: 100%; overflow: hidden; padding: 1em 0.8em 0;}
+.intrDoMain li{width: 100%; overflow: hidden; padding-bottom: 1em;}
+.intrDoMain li img{width: auto; float: left; margin-right: 0.8em;}
+.intrDoMain li span{overflow: hidden; display: block; margin-top: 0.2em; line-height: 1.5em; color: #606060;}
+.intrDoMain li span em{font-size: 1.25em; line-height: 2em; color: #1392ee; display: block;}
+.intrDoMain li span em a{color: #1392ee; text-decoration: underline;}
+.textBlue{color: #1392ee;}
+.textRed{color: #f00;}
+.intro > dd.intrUseMain p{line-height: 1.8em;}
+.intrUseImg img{width: auto; float: right; padding: 0.5em 0;}
+.intrQMain > dt{width: 100%; font-size: 0.75em; line-height: 1.2em; color: #0d7fd2; padding: 0.8em 0; border-bottom: 1px solid #e0ebf1;}
+.intrQMain > dt em{width: 1.6em; height: 1.6em; line-height: 1.6em; border-radius: 1.5em; background-color: #90C31F; text-align: center; color: #fff; position: absolute; left: 0.5em; top: 50%; margin-top: -0.8em;}
+.intrQMain > dt span{display: block; overflow: hidden; padding: 0 2.5em 0 2.8em;}
+.intrQMain > dt:after{width: 0; border: 6px solid transparent; border-top: 6px solid #90C31F; position: absolute; right: 1em; top: 50%; margin-top: -9px;}
+.intrQMain > dt.active em{background-color: #E40077;}
+.intrQMain > dt.active:after{border-bottom: 6px solid #E40077; border-top: 6px solid transparent;}
+.intrQMain > dd{background-color: #e0ebf1; padding: 1em; color: #606060; line-height: 2em; display: none;}
+
+@media(max-width:600px) {
+	.adv-table td.left{ width:42.5%}
+}
+@media(max-width:560px) {
+	.adv-table td.left{ width:43%}
+}
+@media(max-width:480px) {
+	.adv-table td.left{ width:43%}
+}
+@media(max-width:360px) {
+	.adv-table td.left{ width:44%}
+}

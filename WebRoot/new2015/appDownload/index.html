@@ -1,0 +1,68 @@
+<!DOCTYPE>
+<html manifest="../manifest/index.appcache">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport"
+          content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <title>精品下载</title>
+    <link href="../css/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/appDownload.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="main">
+    <ul class="appDown">
+        <li>
+            <div class="appImg"><img src="../images/icons/d02.png"/></div>
+            <span>和生活</span>
+            <div class="appDownBtn">
+                <a href="#" class="iosBtn"><i></i>IOS</a>
+                <a href="#" class="androidBtn"><i></i>Android</a>
+            </div>
+        </li>
+        <li>
+            <div class="appImg"><img src="../images/icons/ad01.png"/></div>
+            <span>和地图</span>
+            <div class="appDownBtn">
+                <a href="#" class="iosBtn"><i></i>IOS</a>
+                <a href="#" class="androidBtn"><i></i>Android</a>
+            </div>
+        </li>
+        <li>
+            <div class="appImg"><img src="../images/icons/d04.png"/></div>
+            <span>和包</span>
+            <div class="appDownBtn">
+                <a href="#" class="iosBtn"><i></i>IOS</a>
+                <a href="#" class="androidBtn"><i></i>Android</a>
+            </div>
+        </li>
+        <li>
+            <div class="appImg"><img src="../images/icons/ad02.png"/></div>
+            <span>灵犀</span>
+            <div class="appDownBtn">
+                <a href="#" class="iosBtn"><i></i>IOS</a>
+                <a href="#" class="androidBtn"><i></i>Android</a>
+            </div>
+        </li>
+        <li>
+            <div class="appImg"><img src="../images/icons/d03.png"/></div>
+            <span>和通讯录</span>
+            <div class="appDownBtn">
+                <a href="#" class="iosBtn"><i></i>IOS</a>
+                <a href="#" class="androidBtn"><i></i>Android</a>
+            </div>
+        </li>
+    </ul>
+</div>
+
+</body>
+<script src="../js/lib/seajs/seajs.js"></script>
+<script type="text/javascript">
+    seajs.use(['jquery','JSBridge','main'], function(a) {
+       seajs.use("../js/" + SCRIPT_PATH + "/model/down/index");
+    });
+</script>
+
+</html>

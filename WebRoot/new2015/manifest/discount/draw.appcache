@@ -1,0 +1,19 @@
+CACHE MANIFEST
+# 2015-09-06 v3.3.4
+CACHE:
+	#�齱�
+	../../images/discount/banner01.jpg
+	../../images/common/overlaydrawbg10.png
+	../../images/common/draw10icon2.png
+	../../images/common/draw10icon1.png
+	../../images/common/draw10icon3.png
+	../../images/common/draw10icon4.png
+	../../images/common/overlaydrawicon.png
+	../../images/common/drawbtnicon.png
+	
+	
+NETWORK:
+*
+	
+FALLBACK:
+	

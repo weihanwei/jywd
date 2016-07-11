@@ -1,0 +1,151 @@
+<!DOCTYPE>
+<html manifest="../manifest/index.appcache">
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport"
+          content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <title>流量套餐</title>
+    <link href="../css/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/swiper.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/flow.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="main">
+    <!--bananer start-->
+    <div class="banner pr">
+        <div class="swiper-container" id="slider">
+            <ul class="swiper-wrapper" style="height:auto">
+                <li class="swiper-slide">
+                    <img src="../images/flow/banner01.jpg">
+                </li>
+                <li class="swiper-slide">
+                    <img src="../images/flow/banner01.jpg">
+                </li>
+                <li class="swiper-slide">
+                    <img src="../images/flow/banner01.jpg">
+                </li>
+            </ul>
+            <div class="swiper-pagination banner-pagination"></div>
+        </div>
+    </div>
+    <!--bananer end-->
+    <!--package start-->
+    <ul class="package packageNew">
+        <li class="f-l">
+            <!--showpart start-->
+            <div class="pr packageText">
+                <div class="pa packageImg">
+                    <div class="packageImgBox">
+                        <img src="../images/flow/packageicon.jpg" alt="套餐icon"/>
+                    </div>
+                </div>
+                <div class="packageMain">
+                    <h5>手机流量5元套餐（30M）</h5>
+                    <p>产品价格：5元/月。</p>
+                    <p>套餐包含流量：30M国内通用流量。</p>
+                </div>
+                <div class="pa packageBtn">
+                    <a href="javascript:void(0);" class="pHandleBtn">办理</a>
+                </div>
+            </div>
+            <!--showpart end-->
+        </li>
+        <li class="f-l">
+            <!--showpart start-->
+            <div class="pr packageText">
+                <div class="pa packageImg">
+                    <div class="packageImgBox">
+                        <img src="../images/flow/packageicon.jpg" alt="套餐icon"/>
+                    </div>
+                </div>
+                <div class="packageMain">
+                    <h5>手机流量5元套餐（30M）</h5>
+                    <p>产品价格：5元/月。</p>
+                    <p>套餐包含流量：30M国内通用流量。</p>
+                </div>
+                <div class="pa packageBtn">
+                    <a href="javascript:void(0);" class="pHandleBtn">办理</a>
+                </div>
+            </div>
+            <!--showpart end-->
+        </li>
+        <li class="f-l">
+            <!--showpart start-->
+            <div class="pr packageText">
+                <div class="pa packageImg">
+                    <div class="packageImgBox">
+                        <img src="../images/flow/packageicon.jpg" alt="套餐icon"/>
+                    </div>
+                </div>
+                <div class="packageMain">
+                    <h5>手机流量5元套餐（30M）</h5>
+                    <p>产品价格：5元/月。</p>
+                    <p>套餐包含流量：30M国内通用流量。</p>
+                </div>
+                <div class="pa packageBtn">
+                    <a href="javascript:void(0);" class="pHandleBtn">办理</a>
+                </div>
+            </div>
+            <!--showpart end-->
+        </li>
+        <li class="f-l">
+            <!--showpart start-->
+            <div class="pr packageText">
+                <div class="pa packageImg">
+                    <div class="packageImgBox">
+                        <img src="../images/flow/packageicon.jpg" alt="套餐icon"/>
+                    </div>
+                </div>
+                <div class="packageMain">
+                    <h5>手机流量5元套餐（30M）</h5>
+                    <p>产品价格：5元/月。</p>
+                    <p>套餐包含流量：30M国内通用流量。</p>
+                </div>
+                <div class="pa packageBtn">
+                    <a href="javascript:void(0);" class="pHandleBtn">办理</a>
+                </div>
+            </div>
+            <!--showpart end-->
+        </li>
+    </ul>
+    <!--package start-->
+</div>
+<!--packagePopup start-->
+<div class="packagePopup hide">
+    <div class="packagePopupHeader">
+        <i></i>选择赠送内容
+        <span class="packagePopupClose"></span>
+    </div>
+    <dl class="packagePopupMain">
+        <dd class="packageLabelRadio pr">
+            <input type="radio" class="pPopupInput" name="sel01" id="sel001" />
+            <label class="packageRadioIcon" for="sel001"></label>
+            <label class="packageRadioText" for="sel001">赠送3元话费</label>
+        </dd>
+        <dd class="packageLabelRadio pr">
+            <input type="radio" class="pPopupInput" name="sel01" id="sel002" />
+            <label class="packageRadioIcon" for="sel002"></label>
+            <label class="packageRadioText" for="sel002">赠送200M国内流量</label>
+        </dd>
+        <dd class="packageLabelRadio pr">
+            <input type="radio" class="pPopupInput" name="sel01" id="sel003" />
+            <label class="packageRadioIcon" for="sel003"></label>
+            <label class="packageRadioText" for="sel003">赠送50分钟本地通话</label>
+        </dd>
+    </dl>
+    <a href="#" class="packagePopupBtn">确认办理</a>
+</div>
+<!--packagePopup end-->
+
+<div class="popupbg hide"></div>
+</body>
+<script src="../js/lib/seajs/seajs.js"></script>
+<script type="text/javascript">
+    seajs.use(['jquery','JSBridge','main','swiper'], function(a) {
+        seajs.use("../js/"+SCRIPT_PATH+"/model/flow/package");
+    });
+</script>
+</html>

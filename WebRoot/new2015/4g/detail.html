@@ -1,0 +1,62 @@
+<!DOCTYPE>
+<html manifest="../manifest/4g/detail.appcache">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport"
+          content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <title>4G套餐</title>
+    <link href="../css/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/swiper.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/4g.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="main">
+    <div class="package-detail">
+        <ul class="package-list">
+            <li>
+                <div class="ads-row">
+                    <div class="ads-c-2">
+                        <span class="icon"><img src="../images/4g/package_img.png"></span>
+                    </div>
+                    <div class="ads-c-10">
+                        <p class="package-name fem-12">58元4G上网套餐（体验版）</p>
+
+                        <div class="package-info">
+                            价格：58元/月<br>
+                            适用品牌：全球通、神州行、动感地带<br>
+                            适用地市：全市<br>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="package-introduction pd1em">
+        <div class="ptitle">
+            <span class="fem-12 blue2">套餐描述</span>
+        </div>
+        <div class="h1em"></div>
+        <div class="ptext text-indent lh-16">
+            58元套餐=50分钟国内主叫+200M国内流量，赠送100分钟本地通话+300M国内4G流量。快速升级4G三步曲：免费换卡+办4G套餐+买4G手机！
+        </div>
+    </div>
+
+    <div class="btn_fixed">
+        <div class="main">
+            <div class="pd1em"><a href="javascript:" class="aBtn aBtn-green" onclick="jy.popUpShow(1,1,1,function(){$('.overPopu,.popupbg').hide();})"><span class="fem-12">办理</span></a></div>
+        </div>
+    </div>
+    <div class="btn_fixed_height"></div>
+
+</div>
+</body>
+<script src="../js/lib/seajs/seajs.js"></script>
+<script type="text/javascript">
+    seajs.use(['jquery', 'JSBridge', 'main'], function (a) {
+        seajs.use("../js/" + SCRIPT_PATH + "/model/4g/detail");
+    });
+</script>
+</html>

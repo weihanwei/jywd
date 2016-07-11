@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.login-wrap{ padding:1em; line-height:3em;}
+input.ltextput{ border:1px solid #8d8d8d; border-radius:0.5em;  -webkit-border-radius:0.5em; width:98%; height:3em; padding:0 1em; font-size:1em;}
+input.ltextput:focus{ border-color:#0fb9f0}
+.login-wrap .ads-row{ padding-bottom:1em;}
+.pr-1em{ padding-right:1em;}
+a.blue{ color:#55aced}
+a.blue:active{ color:#216da6}
+a.forgetPassswor{ color:#999; text-decoration:underline}
+a.forgetPassswor:active{ color:#90bd48}
+.inputW-90 input.ltextput{width: 90%;}
+
+/*--toScaned.html--*/
+.toScaned input{background-color: #fff;}
+.toScanedText{font-size: 1em; line-height: 150%; color: #0085ce;}

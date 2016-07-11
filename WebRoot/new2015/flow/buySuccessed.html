@@ -1,0 +1,43 @@
+<!DOCTYPE>
+<html manifest="../manifest/flow/buySuccessed.appcache">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>购买红包成功</title>
+    <link href="../css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="../css/common.css" rel="stylesheet" type="text/css" />
+    <link href="../css/flow.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="main">
+    <div class="buyed">
+        <div class="buyedImg">
+            <img src="../images/flow/buyedbg.png" />
+        </div>
+        <div class="pd1em">
+            <div class="buyedTitle">恭喜您！</div>
+            <p>已成功购买<span>10</span>个10M流量红包！</p>
+            <div class="buyedText">
+                <p>按提示选择好友，好友即可收到消息拆红包。</p>
+                <p>如果发送至好友群，则先抢先得，抢完即止。</p>
+            </div>
+        </div>
+        <div class="pd1em">
+            <a href="#" class="aBtn aBtn-blue"><span class="fem-12">点击页面右上角按钮，发送给好友</span></a>
+            <div class="h1em"></div>
+            <a href="buyRedpackage.html" class="aBtn aBtn-green"><span class="fem-12">返回流量红包首页</span></a>
+        </div>
+        <div class="h2em"></div>
+    </div>
+</div>
+</body>
+<script src="../js/lib/seajs/seajs.js"></script>
+<script type="text/javascript">
+    seajs.use(['jquery','JSBridge','../js/'+SCRIPT_PATH+'/main'], function(require) {
+        seajs.use("../js/"+SCRIPT_PATH+"/model/index/login");
+    });
+</script>
+
+</html>

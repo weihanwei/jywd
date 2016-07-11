@@ -1,0 +1,26 @@
+CACHE MANIFEST
+# 2015-09-06 v3.3.4
+CACHE:
+	#images
+	
+    #css
+    ../../css/reset.css
+    ../../css/common.css
+    ../../css/call.css
+
+	#javascript
+	../../js/lib/seajs/seajs.js
+	../../js/lib/jquery/jquery.js
+	../../js/src/common/JSBridge.js
+	../../js/src/main.js
+	../../js/lib/jquery/jquery.tfAlerts.js
+    ../../js/recommend.js
+    ../../js/src/model/call/cornetNet.js
+    ../../js/src/common/locautil.js
+    ../../js/src/common/common.js
+    ../../js/lib/fastclick/fastclick.js
+            
+NETWORK:
+*
+	
+FALLBACK:

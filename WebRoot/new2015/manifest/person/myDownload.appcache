@@ -1,0 +1,15 @@
+CACHE MANIFEST
+# 2015-09-06 v1.0.0
+CACHE:
+	#нр╣добть
+	../../images/icons/d02.png
+	../../images/icons/ad01.png
+	../../images/icons/ad02.png
+	../../images/icons/d04.png
+	../../images/icons/d03.png
+
+NETWORK:
+*
+	
+FALLBACK:
+	

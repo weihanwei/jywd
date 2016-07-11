@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport"
+          content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <title>用户登记</title>
+    <link href="../css/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/login.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="main">
+    <div class="login-wrap">
+        <div class="h1em"></div>
+        <div class="ads-row">
+            <div class="ads-c-20">手机号码:</div>
+            <div class="ads-c-80 inputW-90"><input type="text" class="ltextput" placeholder="请输入手机号码"><span class="red">*</span></div>
+        </div>
+        <!---type msg-->
+        <div class="showContent">
+            <div class="ads-row">
+                <div class="ads-c-20">动态密码:</div>
+                <div class="ads-c-6 inputW-90">
+                    <input type="text" class="ltextput f-l" placeholder="短信验证码"><span class="red">*</span>
+                </div>
+                <div class="ads-c-3"><a href="javascript:" class="aBtn aBtn-green"><span class="fem-12">点击获取</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="ads-row">
+            <div class="ads-c-12"><a href="javascript:" class="aBtn aBtn-blue"><span class="fem-12">确认登记</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/lib/seajs/seajs.js"></script>
+<script type="text/javascript">
+    seajs.use(['jquery', 'JSBridge', 'main'], function (a) {
+        jy.innertHead('微信登记');
+    });
+</script>
+
+</html>

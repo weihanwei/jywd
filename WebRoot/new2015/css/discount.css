@@ -1,0 +1,57 @@
+@charset "utf-8";
+/*--discountDetails.html 专享特惠详情--*/
+.disDetail{width: 100%; overflow: hidden; padding: 1em 4% 5.5em;}
+.disDetHead,.disDetMain{width: 100%; overflow: hidden; padding-bottom: 1em;}
+.disDetTitle{font-size: 1.25em; line-height: 2em; color: #2b2b2b;}
+.disDetHead p{font-size: 1em; line-height: 1.5em; color: #a7a7a7;}
+.disDetMainTitle{font-size: 1.5em; line-height: 2em; color: #e1006c; padding-top: 0.4em;}
+.disDetMain p{font-size: 1em; line-height: 1.4em; color: #2b2b2b;}
+.disText{text-indent: 24px; text-align: justify;}
+
+/*--draw.html 抽奖活动--*/
+.drawbg{background: url("../images/discount/drawbg.jpg") no-repeat center top;}
+.drawText{width: 94%; overflow: hidden; margin: 0 auto; font-size: 1em; color: #4d3d64; padding-bottom: 2em;}
+.drawTitle{font-size: 1.5em; color: #e1006c; padding-top: 1em;}
+
+/*--bargain.html 砍价活动--*/
+.bargTitle{font-size: 1.25em; line-height: 1.5em; color: #fff; background-color: #f64319; width: 100%; padding: 0.5em 4%;}
+.bargTitle span{font-size: 0.75em; transform: scale(0.9); -webkit-transform: scale(0.9); transform-origin: 100% 50%; -webkit-transform-origin: 100% 50%;}
+.bargTab{width: 100%; height: auto;}
+.bargTab td{border-right: 1px solid #969696; border-bottom: 1px solid #969696; width: 20%; padding: 0.5em;}
+.bargTab td:last-child{border-right: 0 none;}
+.bargTab tr:nth-child(1) td{color: #f64319; font-size: 0.75em; line-height: 1.5em; text-align: center;}
+.bargTab tr:nth-child(2) td{color: #2b2b2b; border-bottom: 1px solid #f64319; background-color: #ffe4b8; font-size: 0.5em; line-height: 1.5em; text-align: justify;}
+.bargMidImg{width: 100%; padding: 1.5em 0 2em;}
+.bargList{width: 100%; overflow: hidden;}
+.bargList li{width: 25%; overflow: hidden; padding: 0 1.5%; float: left; border-radius: 0.4em;}
+.bargList li a{display: block; padding: 0.5em 0; border-radius: 0.4em; font-size: 1em; line-height: 1.8em; color: #fff; text-align: center;}
+.bargList li:nth-child(1) a{background-color: #e1006c;}
+.bargList li:nth-child(2) a{background-color: #f64319;}
+.bargList li:nth-child(3) a{background-color: #940083;}
+.bargList li:nth-child(4) a{background-color: #55aced;}
+
+/*--snapUp.html 抢购活动--*/
+.snapUpImg{width: 100%; overflow: hidden;}
+.snapUp{width: 100%; overflow: hidden; padding: 1em 6% 2em;}
+.snapUpIcon{left: 0; top: 2em; width: 17%;}
+.snapIconText{width:100%; left: 0; top: 50%; margin-top: -1.2em; text-align: center; font-size: 1em; line-height: 1.2em; color: #fff;}
+.snapFollow{width: 100%; text-align: right; font-size: 0.5em; color: #2b2b2b; padding-bottom: 1.4em;}
+.snapTitle,.snapPrice{width: 100%; text-align: center; font-size: 1.5em;}
+.snapTitle{color: #55aced;}
+.snapTitle span{padding-left: 2%;}
+.snapPrice{color: #2b2b2b; padding-bottom: 0.6em;}
+.snapPrice span{color: #e1006c;}
+.snapUp p{font-size: 1em; color: #b7b7b7; text-align: justify; padding: 0 3%;}
+.snapMain{width: 100%; overflow: hidden; padding: 1em 4%;}
+.snapMainTitle{color: #e1006c; font-size: 1.4em; padding: 0.5em 0;}
+.snapMain p{font-size: 1em; color: #2b2b2b; text-align: justify; line-height: 180%}
+
+/*--woot.html 团购活动--*/
+.woot{width: 100%; overflow: hidden; padding: 2em 6% 1em; text-align: center;}
+.wootTitle{font-size: 3em; color: #55aced;}
+.woot p{font-size: 1em; color: #b7b7b7; padding: 0.5em 0 2em;}
+.wootMain{font-size: 1em; color: #2b2b2b;}
+.wootMain span{padding-left: 6%;}
+
+
+

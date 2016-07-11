@@ -1,0 +1,45 @@
+<!DOCTYPE>
+<html manifest="../manifest/flow/sharRedpackage.appcache">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>流量红包分享</title>
+    <link href="../css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="../css/common.css" rel="stylesheet" type="text/css" />
+    <link href="../css/flow.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="bodybg">
+<div class="main">
+    <div class="sharTip">
+        <p>跌倒阿郎的流量红包&nbsp;&nbsp;2016/2/2&nbsp;&nbsp;有效期至2016/2/2</p>
+        <p>10个10MB流量红包，已领取0/0个</p>
+    </div>
+    <div class="pd1em">
+        <a href="#" class="aBtn aBtn-red">点击页面右上角按钮，继续转发红包</a>
+    </div>
+    <div class="shareMain">
+        <p>详细领取记录</p>
+        <ul class="shareMList">
+            <li>
+                <h3>张三的流量红包<span class="f-r">10M</span></h3>
+                <p>2015-07-25<span class="f-r yellow">未兑换</span></p>
+            </li>
+        </ul>
+
+    </div>
+    <div class="shareBtnPad">
+        <a href="#" class="aBtn abtn-green">我要发流量红包</a>
+    </div>
+</div>
+
+</body>
+<script src="../js/lib/seajs/seajs.js"></script>
+<script type="text/javascript">
+    seajs.use(['jquery','JSBridge','main','tmpl'], function(a) {
+        seajs.use("../js/"+SCRIPT_PATH+"/model/person/shareRedpackage");
+    });
+</script>
+
+</html>

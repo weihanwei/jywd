@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html manifest="../manifest/index.appcache">
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport"
+          content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <title>流量叠加包首单免费</title>
+    <link href="../css/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/flow.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="main">
+    <img src="../images/flow/banner02.jpg" />
+    <div class="fFContent">
+        <p>请选择办理的套餐档次：</p>
+        <ul class="fFPackage">
+            <li>
+                <input type="radio" name="fFList" id="fF_01">
+                <label for="fF_01">5元30M</label>
+            </li>
+            <li>
+                <input type="radio" name="fFList" id="fF_02" disabled />
+                <label for="fF_02" class="gray">10元100M</label>
+            </li>
+            <li>
+                <input type="radio" name="fFList" id="fF_03">
+                <label for="fF_03">20元300M</label>
+            </li>
+        </ul>
+        <a href="#" class="greenBtn gray">确定购买</a>
+    </div>
+    <div class="fFRule">
+        <div class="fFRuleTitle pr">活动规则：</div>
+        <div class="fFMain">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%" class="fFTab">
+                <tr>
+                    <th width="25%">首单免费流量<br/>叠加包类型</th>
+                    <th width="20%">赠送话费<br/>（元）</th>
+                    <th width="55%">活动规则</th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>5元30M</p>
+                        <p>流量叠加包</p>
+                    </td>
+                    <td>5</td>
+                    <td rowspan="3">
+                        <p>（1）本活动只针对揭阳移动幸运客户。</p>
+                        <p>（2）每位客户只享受一次首单免费。</p>
+                        <p>（3）首单免费采取先扣费再赠费的方式进行，所赠话费在客户成功办理叠加包后由系统自动赠送。</p>
+                        <p>（4）随心王客户暂时无法参加活动。</p>
+                        <p>（5）活动采取先购先得方式，购完即止。</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>10元100M</p>
+                        <p>流量叠加包</p>
+                    </td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>20元300M</p>
+                        <p>流量叠加包</p>
+                    </td>
+                    <td>20</td>
+                </tr>
+            </table>
+        </div>
+        <div class="fFTip">来晚了没关系，下载广东移动10086APP，流量叠加包天天8折优惠！</div>
+        <a href="#" class="fFDown pr">点我去下载！</a>
+    </div>
+</div>
+</body>
+<script src="../js/lib/seajs/seajs.js"></script>
+<script type="text/javascript">
+    seajs.use(['jquery','JSBridge','main'], function(a) {
+        seajs.use("../js/"+SCRIPT_PATH+"/model/flow/firstFree");
+    });
+</script>
+</html>

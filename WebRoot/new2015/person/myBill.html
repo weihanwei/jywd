@@ -1,0 +1,96 @@
+<!DOCTYPE>
+<html manifest="../manifest/person/myBill.appcache">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>我的账单</title>
+    <link href="../css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="../css/common.css" rel="stylesheet" type="text/css" />
+    <link href="../css/person.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="myRecRedpBg">
+<div class="main">
+    <ul class="myBillNav">
+        <li><span>3月</span></li>
+        <li><span>4月</span></li>
+        <li><span>5月</span></li>
+        <li><span>6月</span></li>
+        <li><span>7月</span></li>
+        <li><span>8月</span></li>
+    </ul>
+    <dl class="icon-tab-list">
+        <dt class="icon-jt-down">
+            <span class="icon bg-cover gold-icon gold-icon-4"></span>
+            <span class="fem-12">近6个月消费图</span>
+        </dt>
+        <dd>
+            <div class="myBillEcharts pr">
+                <div id="main" class="myBillBar"></div>
+            </div>
+        </dd>
+
+        <!--<dt class="icon-jt-down">
+            <span class="icon bg-cover gold-icon gold-icon-5"></span>
+            <span class="fem-12"><em class="myBillMonth">1月</em>份账单明细</span>
+        </dt>
+        <dd class="hide">
+            <ul class="myBillDetails">
+                <li>
+                    <div class="myW65 f-l">科目</div>
+                    <div class="myW35 f-l">金额（元）</div>
+                </li>
+                <li>
+                    <div class="myW65 f-l">账单总额</div>
+                    <div class="myW35 f-l">61.60</div>
+                </li>
+                <li>
+                    <div class="myDetNav">
+                        <div class="myW65 f-l">固定费用</div>
+                        <div class="myW35 f-l">29.00</div>
+                    </div>
+                    <div class="myDetLists hide">
+                        <div class="myDetMain">
+                            <div class="myW65 f-l">4G流量王19元套餐</div>
+                            <div class="myW35 f-l">19.00</div>
+                        </div>
+                        <div class="myDetMain">
+                            <div class="myW65 f-l">10M流量红包（10元10个）</div>
+                            <div class="myW35 f-l">10.00</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="myDetNav">
+                        <div class="myW65 f-l">语音通讯费</div>
+                        <div class="myW35 f-l">31.60</div>
+                    </div>
+                    <div class="myDetLists hide">
+                        <div class="myDetMain">
+                            <div class="myW65 f-l">4G流量王19元套餐</div>
+                            <div class="myW35 f-l">19.00</div>
+                        </div>
+                        <div class="myDetMain">
+                            <div class="myW65 f-l">10M流量红包（10元10个）</div>
+                            <div class="myW35 f-l">10.00</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            &lt;!&ndash;模板&ndash;&gt;
+            &lt;!&ndash;模板 end&ndash;&gt;
+        </dd>-->
+    </dl>
+</div>
+
+</body>
+<script src="../js/lib/echarts/echarts-all.js"></script>
+<script src="../js/lib/seajs/seajs.js"></script>
+<script type="text/javascript">
+    seajs.use(['jquery','JSBridge','main','tmpl'], function(a) {
+        seajs.use("../js/"+SCRIPT_PATH+"/model/person/myBill");
+    });
+</script>
+
+</html>

@@ -1,0 +1,27 @@
+@charset "utf-8";
+/*--appDownload.html 精品下载--*/
+.appDown{width: 100%; overflow: hidden;}
+.appDown li{width: 96%; overflow: hidden; margin-left: 4%; padding: 1em 0; border-bottom: 1px solid #a7a7a7; position: relative; line-height: 3.4em; float: left;}
+.appImg{width: 3.4em; height: 3.4em; overflow: hidden; float: left;}
+.appDown li > span{font-size: 1.25em; color: #2b2b2b; padding-left: 0.8em;}
+.appDownBtn{width: auto; height: 2.6em; position: absolute; right: 0.5em; top: 1.4em;}
+.appDownBtn a{width: 6em; float: left; margin-right: 0.4em; font-size: 1em; line-height: 2.6em; text-align: center; color: #fff; display: inline-block; border-radius: 6px;}
+.iosBtn{background-color: #55aced;}
+.androidBtn{background-color: #89b929;}
+.appDownBtn a i{width: 1.5em; height: 1.5em; display: inline-block; vertical-align: middle; background: url("../images/appDownload/downIcon.png") no-repeat; background-size: cover; -webkit-background-size: cover;}
+.appDownBtn a.iosBtn i{background-position: center bottom;}
+.appDownBtn a.androidBtn i{background-position: center top;}
+
+/*--downDetail.html 下载详情--*/
+.downBtn{width: 5em; height: 5em; float: right;}
+.downDetail{position: absolute; left: 6em; right: 5em; bottom: 1em; top: 1em;}
+.downDetail h4{font-size: 1.5em; line-height: 200%; color: #2b2b2b; font-weight: normal;}
+.downDetail p{font-size: 1em; line-height: 160%; color: #aeaeae; margin-top: 0.4em;}
+.downBtn span{width: 1.5em; height: 1.5em; margin: 0 auto; display: block; background: url("../images/appDownload/downDetail.png") no-repeat;}
+.downBtn span.downBtnOn{background-position: center top;}
+.downBtn span.downBtnStop{background-position: center -1.5em;}
+.downBtn span.downBtnDel{background-position: center bottom; margin-top: 1em;}
+.downBtn span.downBtnOpen{width: 4em; height: 2em; margin-top: 1.5em; font-size: 1em; line-height: 2em; color: #fff; text-align: center; border-radius: 4px; background: #90bd48; display: inline-block;}
+.downScale{transform: scale(0.8); -webkit-transform: scale(0.8); transform-origin-x: 0; -webkit-transform-origin-x: 0; margin-top: -0.2em !important;}
+.downDetProcess{width: 100%; height: 0.5em; border-radius: 0.5em; background-color: #aeaeae;}
+.downDetProcess:before{width: 70%; height: 0.5em; border-radius: 0.5em; background-color: #89b929; position: absolute; left: 0; top: 0;}

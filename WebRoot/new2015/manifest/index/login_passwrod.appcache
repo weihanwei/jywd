@@ -1,0 +1,11 @@
+CACHE MANIFEST
+# 2015-09-06 v3.3.4
+CACHE:
+	#��½
+	../../images/common/error_img_1.jpg
+
+NETWORK:
+*
+	
+FALLBACK:
+	

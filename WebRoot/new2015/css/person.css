@@ -1,0 +1,260 @@
+@charset "utf-8";
+body{ background:#fff}
+.color-hui{ color:#bfbfbf}
+.color-red{ color:#e1006c}
+
+
+/*person*/
+.person-menu-list { border-bottom:1px solid #c8c7cc; overflow:hidden}
+.person-menu-list li{ line-height:4em; border-top:1px solid #c8c7cc; margin-left:4em; position:relative; margin-top:-1px;}
+.person-menu-list li .icon{ background:url(../images/person/icon_list.png); width:2em; height:2em; position:absolute; left:-2.75em; top:50%; margin-top:-1em; font-size:1.25em}
+.person-menu-list li:before{position: absolute; right:1em; top:50%; margin-top:-4px;}
+.person-menu-list li a{ display:block; color:#000}
+.person-menu-list li a:active{ color:#55aced}
+.person-menu-list li:active:before{position: absolute; border-color:#55aced;}
+.person-menu-list li .icon-2{ background-position:0 -2em}
+.person-menu-list li .icon-3{ background-position:0 -4em}
+.person-menu-list li .icon-4{ background-position:0 -6em}
+.person-menu-list li .icon-5{ background-position:0 -8em}
+.person-menu-list li .icon-6{ background-position:0 -10em}
+.person-menu-list li .icon-7{ background-position:0 -12em}
+.person-menu-list li .icon-8{ background-position:0 -14em}
+.person-menu-list li .icon-9{ background-position:0 -16em}
+.person-menu-list li .icon-10{ background-position:0 -18em}
+.person-menu-list li .icon-11{ background-position:0 -20em}
+.person-menu-list li .icon-12{ background-position:0 -22em}
+.person-menu-list li .icon-13{ background-position:0 -24em}
+
+/*我的金币*/
+.menu-icon-gold-1{ background-image:url(../images/person/gole_header_icon.png);}
+.menu-icon-gold-2{ background-image:url(../images/person/gole_header_icon.png); background-position:0 -2em}
+.gold-icon{ background:url(../images/person/gole_list_icon.png) no-repeat;}
+.gold-icon-2{ background-position:0 -2em}
+.gold-icon-3{ background-position:0 -4em}
+.myGoldPadding{padding: 0.5em 1em;}
+.myGold{padding: 0.8em 1em; border-bottom: 1px solid #a7a7a7; font-size: 1em; color: #2b2b2b; line-height: 180%;}
+.myGold span{color: #aeaeae;}
+.myGold span em{color: #2b2b2b;}
+.myGoldTime{transform: scale(0.9); -webkit-transform: scale(0.9); transform-origin: 0; -webkit-transform-origin: 0;}
+.ruleBtn{width: 90%; display: inline-block; font-size: 1.25em; line-height: 2em; color: #fff; text-align: center; border: 1px solid #fff; border-radius: 1.2em; box-shadow: 0 0 1px #fff; padding-right: 1em; margin-top: 0.7em; position: relative;}
+.ruleBtn:after{width: 0.6em; height: 0.6em; border: solid #fff; border-width: 2px 2px 0 0; transform: rotate(45deg); -webkit-transform: rotate(45deg); position: absolute; right: 0.8em; top: 0.7em;}
+
+/*icon-tab-list*/
+.icon-tab-list dt{ line-height:3em; background:#e0ebef; padding-left:4em; position:relative; border-bottom:1px solid #b8b8b8;}
+.icon-tab-list dt.icon-jt-down:before{position: absolute; right:1em; top:50%; transition: all 0.3s ease-out; -webkit-transition: all 0.3s ease-out; display: none;}
+.icon-tab-list dt.active.icon-jt-down:before{-webkit-transform:rotate(-135deg);transform:rotate(-135deg); margin-top:-4px}
+.icon-tab-list dt:after{ height:1px; background:#fff; position: absolute; left:0px; bottom:0px; width:100%;}
+.icon-tab-list dt span.icon{ width:2em; height:2em; position:absolute; left:1em; top:50%; margin-top:-1em;}
+.icon-tab-list dt span.icon:after{height:0; width:0; display:none; border:0.4em transparent solid; border-top-width:0;  border-bottom-color:#fff; position:absolute; top:2.25em; left:50%; margin-left:-0.4em}
+.icon-tab-list dt.active span.icon:after{ display:block;}
+.icon-tab-list dd{ overflow:hidden}
+/*icon-tab-list end*/
+
+.icon-tab-list.myGoldList dt:before{display: block;}
+
+.gold-list{ margin-top:-1px; padding-bottom: 1em;}
+.gold-list > .ads-row{ border-top:1px solid #c8c7cc}
+a.gold-exchange-btn{ display:inline-block; background:#fff; background:#90bd48; color:#fff; padding:0.5em 3em}
+a.gold-exchange-btn:active{ background:#679321}
+.gold-exchange-list {border-top:1px solid #c8c7cc; position:relative}
+.gold-exchange-list:before{position: absolute; height:100%; width:1px; left:50%; background:#c8c7cc}
+.gold-exchange-list .ads-row > .ads-c-6{ border-bottom:1px solid #c8c7cc;}
+
+.icon-tab-list dt.myGoldGo{background: #fff;}
+.icon-tab-list dt.myGoldGo:before{transform: rotate(-45deg); -webkit-transform: rotate(-45deg); position: absolute; right: 1.2em;}
+.icon-tab-list dt.myGoldGo a{display: block; color: #000;}
+
+/*--comboDetails.html 套餐使用情况--*/
+.combo dt,.combo dd{width: 100%; overflow: hidden;}
+.combo dt{background-color: #e0ebef; height: 3em; font-size: 1.5em; line-height: 3em;}
+.combo dt i{width: 2em; height: 2em; margin: 0.5em 0.5em 0.5em 1em; background-image: url("../images/person/comboicon.png"); background-repeat: no-repeat;}
+.combo dt span{color: #e1006c; padding-right: 0.5em;}
+.combo dd{padding: 2em 1em 1em; background: url("../images/person/combobg.jpg") no-repeat center top; background-size: 100%;}
+.combo dd p{font-size: 1.25em; color: #2b2b2b; padding-bottom: 1em;}
+.comboDetails{font-size: 1em; color: #878787; width: 100%; height: 1em;}
+.comboDetails span{position: absolute; left: 50%;}
+.comboicon1{background-position: center top;}
+.comboicon2{background-position: center -3.8em;}
+.comboicon3{background-position: center -7.5em;}
+.comboicon4{background-position: center bottom;}
+
+
+/*--myDownload.html 我的下载--*/
+.myDownHeader{width: 100%; height: 3em; padding: 0 4%; font-size: 1em; color: #2b2b2b; line-height: 3em; border-bottom: 1px solid #a7a7a7;}
+.myDownDel{color: #e30076; padding-left: 1.2em; background: url("../images/icons/delicon.png") no-repeat left center; background-size: 1em 1.5em; height: 3em;}
+.myDownMain{width: 100%; overflow: hidden; border-bottom: 1px solid #a7a7a7;}
+.myDownMain li{width: 96%; padding: 1em 0; margin-left: 4%; border-bottom: 1px solid #a7a7a7;}
+.myDownMain li:last-child{border-bottom: 0 none;}
+.myDownImg{width: 3.6em; height: 3.6em; overflow: hidden; border-radius: 0.8em;}
+.myDownText{position: absolute; left: 4.6em; top: 1em; right: 0; line-height: 3.6em;}
+.myDownText h3{font-size: 1.25em; color: #2b2b2b; font-weight: normal;}
+.myDownText p{width: 100%; padding-right: 6%; text-align: right; line-height: 120%; color: #55aced; font-size: 0.75em; position: absolute; bottom: 0;}
+
+/*--myPrivilege.html 我的优惠--*/
+.myPriwidth li{width: 32.5%;}
+.myPri{width: 100%; overflow: hidden;}
+.myPri dt{width: 100%; font-size: 1.25em; line-height: 3em; color: #2b2b2b; background-color: #e0ebef; border-top: 1px solid #fff; border-bottom: 1px solid #b8b8b8; padding: 0 2.5em 0 1em; position: relative;}
+.myPri dt span{padding-right: 1em;}
+.myPri dt:before{width: 100%; height: 1px; background-color: #fff; position: absolute; bottom: 0; left: 0;}
+.myPri dt:after{width: 6px; height: 6px; border: solid #b3bcbf; border-width: 0 2px 2px 0; -webkit-transform:rotate(45deg);transform:rotate(45deg); transition: all 0.3s ease-out; -webkit-transition: all 0.3s ease-out; position: absolute; right: 1em; top: 50%; margin-top: -4px;}
+@-webkit-keyframes rot {
+    from{-webkit-transform: rotate(135deg);}
+    to{-webkit-transform: rotate(315deg);}
+ }
+.myPri dt.active:after{-webkit-transform:rotate(-135deg);transform:rotate(-135deg); position: absolute;}
+.myPri dd{width: 100%; position: relative; display: none; padding: 1em;}
+.myPri dt.active + dd:before{width: 0.6em; height: 0.6em; background-color: #fff; transform: rotate(45deg); -webkit-transform: rotate(45deg); position: absolute; top: -0.3em; left: 2em;}
+.myPriTitle{font-size: 1em; line-height: 160%; color: #55aced;}
+.myPri dd p{font-size: 0.75em; line-height: 150%; color: #2b2b2b; text-indent: 24px;}
+.myPriA{font-size: 0.75em; padding: 1em 1em 1em 0; color: #55aced; display: inline-block; position: relative;}
+.myPriA:after{width: 6px; height: 6px; border: solid #b3bcbf; border-width: 2px 2px 0 0; transform: rotate(45deg); -webkit-transform: rotate(45deg); position: absolute; right: 0; top: 50%; margin-top: -4px;}
+/*.myPrivi{padding: 0.5em; background-color: #fff; border-bottom: 1px solid #a7a7a7; font-size: 1.25em;}
+.myPrivihead{width: 100%; height: auto; padding: 0.3em 0.5em 0.5em; line-height: 150%;}
+.myPrivihead:after{width: 0.6em; height: 0.6em; border: solid #ccc; border-width: 3px 3px 0 0; transform: rotate(45deg); position: absolute; top: 1.3em; right: 0.3em;}
+.myPrivihead a{display: block; color: #a7a7a7;}
+.myPrivihead a h4{color: #2b2b2b; font-weight: normal;}
+.myPriviMain{width: 100%; overflow: hidden; border-radius: 2px; background-color: #f1f1f1; color: #2b2b2b; padding: 0.4em 0.3em; line-height: 130%; text-align: justify;}
+.myPriviText{text-indent: 24px;}*/
+
+/*--myPrivilegeDetails.html 我的优惠详情--*/
+.myPriDetTitle{width: 100%; overflow: hidden; padding: 1em; background-color: #fff; font-size: 1em;}
+.myPriDetTitle h4{color: #2b2b2b; font-weight: normal; line-height: 160%;}
+.myPriDetTitle p{color: #a7a7a7; line-height: 140%;}
+.myPriDetMain{padding: 1em; font-size: 1em; color: #2b2b2b; line-height: 140%;}
+.myPriDetMain span{display: block;}
+.myPriDetMain p{text-indent: 24px; text-align: justify;line-height: 2em;}
+
+/*--myCoupon.html 我的电子优惠券--*/
+.myShow{width: 100%; height: auto;}
+.myPriHeader{width: 100%; overflow: hidden; background-color: #55aced; padding: 1em 4%; color: #fff031; font-size: 1em;}
+.myPriUser{color: #fff; padding-bottom: 1em;}
+.myPriUser i{width: 1em; height: 1.2em; float: left; vertical-align: middle; margin-right: 5px; background: url("../images/index/icon_user.png") no-repeat center center;}
+.myPriNav{width: 100%; overflow: hidden; padding: 1em 0; background-color: #eef7fd; border-bottom: 1px solid #a7a7a7;}
+.myPriNav ul{width: 64%; overflow: hidden; border: 1px solid #0085ce; border-radius: 0.5em; background-color: #fff; margin: 0 auto;}
+.myPriNav ul li{width: 50%; font-size: 1.25em; line-height: 2.5em; text-align: center; color: #0085ce;}
+.myPriNav ul li.on{background-color: #0085ce; color: #fff;}
+.myPriMain,.myPriUsed,.myPriMainText,.mySendRedp{width: 100%; overflow: hidden;}
+.myPriMain{margin-bottom: 65px;}
+.myPriUsed li,.mySendRedp li{width: 100%; overflow: hidden; border-bottom: 1px solid #ddd;}
+.myPriUsed li a{display: block; padding: 1em 2% 1.5em;}
+.myPriMainText{font-size: 1.25em; color: #2b2b2b; width: 100%; padding: 0 0.25em; line-height: 1.5em;}
+.myPriMainText span{color: #a7a7a7;}
+.myPriNext{width: 1em; height: 1em; display: inline-block; background: url("../images/common/nexticon.png") no-repeat center center; position: absolute; right: 2%; top: 30%;}
+.myPriMainImg{width: 100%; max-height: 12em; overflow: hidden; border-radius: 0.5em; margin-top: 0.5em;}
+
+.myPriNav ul.myCouponul{width: 96%;}
+.myPriNav ul.myCouponul li{width: 33.333333%; border-right: 1px solid #0085ce;}
+.myPriNav ul.myCouponul li:last-child{border-right: 0 none;}
+
+
+/*--mySendRedpackets.html 我发送的红包--*/
+.mySendRedp li{padding: 0.8em 8% 0.8em 4%; position: relative;}
+.mySendRedp li h3{font-size: 1.25em; color: #2b2b2b; line-height: 2em; font-weight: normal;}
+.mySendRedp li:after{width: 0.6em; height: 0.6em; border: solid #ccc; border-width: 2px 2px 0 0; transform: rotate(45deg); -webkit-transform: rotate(45deg); position: absolute; right: 1em; top: 50%; margin-top: -0.3em;}
+.mySendRedp.noDetails li:after{display: none;}
+.mySendRedp li p{font-size: 1em; color: #949494; line-height: 1.4em}
+.mySendRedp li p span{color: #f28f18;}
+
+/*--myReceiveRedpackets.html 我领到的红包--*/
+.myRecRedpBg{background-color: #f1f1f1;}
+.myRecRedp{width: 100%; height: auto; padding: 1.2em 4% 1em; font-size: 1em; line-height: 1em; color: #e1006c; background-color: #fff; border-bottom: 1px solid #ddd;}
+.myRecRedp.active{border-bottom: 0 none;}
+.myRecRedp h4{font-size: 1.25em; color: #2b2b2b; line-height: 1.5em; padding-bottom: 0.5em; font-weight: normal;}
+.myRecRedp h4 span{color: #a6a6a6;}
+.myRecDetails{width: 100%; overflow: hidden; background-color: #fff;}
+.myRecTitle{width: 100%; font-size: 1.2em; line-height: 2em; padding: 0.5em 3% 0; color: #e1006c; background-color: #f1f1f1; border-bottom: 1px solid #a7a7a7; position: relative;}
+.myRecTitle:before{width: 0; height: 0; border: 0.8em transparent solid;border-bottom-width: 0; border-top-color: #fff; position: absolute; left: 45%; top: 0;}
+.myRecFooter{width: 100%; height: auto; padding: 1em 6%; background-color: #f1f1f1; position: fixed; left: 0; bottom: 4.5em; z-index: 10;}
+.myRecBtn{width: 100%; font-size: 1.5em; line-height: 2.4em; color: #fff; text-align: center; background-color: #e1006c; border-radius: 0.2em; display: inline-block;}
+
+/*--myBill.html 我的账单--*/
+.gold-icon-4{ background-position:0 -6em}
+.gold-icon-5{ background-position:0 -8em}
+.myBillNav{width: 100%; overflow: hidden; padding: 4px 0 8px; background-color: #fff; margin-bottom: 1em;}
+.myBillNav li{width: 16.66666666%; height: auto; float: left; border-right: 1px solid #ccc; padding: 0 4px;}
+.myBillNav li:last-child{border-right: 0 none;}
+.myBillNav li span{width:100%; display: inline-block; font-size: 1.5em; line-height: 2em; text-align: center; margin-bottom: -4px; border-bottom: 3px solid transparent;}
+.myBillNav li.on span{border-bottom: 3px solid #55aced;}
+.myBillEcharts{width: 100%; overflow: hidden; margin-bottom: 1em; background-color: #fff;}
+.myBillBar{height: 300px; margin: -5px 0 -20px -40px;}
+
+.myBillDetails{width: 100%; overflow: hidden; background-color: #fff;}
+.myBillDetails li{width: 100%; overflow: hidden; border-bottom: 1px solid #c8c7cc; font-size: 1.5em; line-height: 1.5em; color: #000;}
+.myBillDetails li:first-child{color: #1790cf;}
+.myW35,.myW65{padding: 0.7em 0;}
+.myW65{width: 65%; padding-left: 14px;}
+.myW35{width: 35%; text-align: center;}
+.myDetLists{width: 100%; overflow: hidden;}
+.myDetMain{width: 100%; overflow: hidden; border-top: 1px solid #c8c7cc;}
+.myDetMain .myW65{font-size: 0.75em; color: #585858; padding-left: 24px;}
+.myDetNav .myW35{position: relative;}
+.myDetNav .myW35:before{width: 7px; height: 7px; background-color: transparent; border: solid #ccc; border-width: 0 2px 2px 0; -webkit-transition: all 0.3s ease-out; transition: all 0.3s ease-out; transform: rotate(45deg); -webkit-transform: rotate(45deg); position: absolute; right: 0.6em; top: 50%; margin-top: -4px;}
+.myDetNav.active .myW35:before{transform: rotate(-135deg); -webkit-transform: rotate(-135deg);}
+
+/*--myGoldDetail.html 金币明细--*/
+.myBDeta{width: 100%; overflow: hidden;}
+.myBDeta li{padding: 0.5em 5.2em 0.5em 1.5em; border-bottom: 1px solid #a7a7a7; font-size: 1.25em; line-height: 180%; text-align: justify; position: relative;}
+.myBDeta li p{color: #2b2b2b;}
+.myBDeta li span{color: #aeaeae;}
+.myBDetaTime{transform: scale(0.7); -webkit-transform: scale(0.7); transform-origin: 0; -webkit-transform-origin: 0;}
+.myBMoney{position: absolute; right: 1em; top: 50%; margin-top: -0.75em;}
+
+/*--mySales.html 我的销量--*/
+.mySalesTime{padding: 0.6em;}
+.mySTimeInput{width: 100%; border: 1px solid #ccc !important; vertical-align: middle; border-radius: 2px; font-size: 1em; line-height: 2.6em; color: #939393; padding: 0 1em !important;}
+.mySBtn{width: 100%; background-color: #0085ce; vertical-align: middle; font-size: 1em; line-height: 2.6em; color: #fff; text-align: center; display: inline-block; border-radius: 4px; margin-left: 0.2em;}
+.mySBtn:hover{text-decoration: underline;}
+.mySalesTime span{font-size: 1.5em; line-height: 2em; color: #ccc;}
+.mySalesMain{width: 100%; overflow: hidden; border-top: 1px solid #ccc;}
+.mySalesMain span{width: 20%; text-align: center; color: #2b2b2b; font-size: 1em; float: left; border-right: 1px solid #ccc;}
+.mySalesMain span:first-child{width: 40%; padding-left: 0.8em; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.mySalesMain span:last-child{border-right: 0 none;}
+.mySalesMain dt{width: 100%; overflow: hidden; background-color: #f1f1f1; padding: 0.75em 0;}
+.mySalesMain dt span{line-height: 1.5em;}
+.mySalesMain dd{width: 100%; overflow: hidden; border-bottom: 1px solid #ccc;}
+.mySalesMain dd span{line-height: 3em;}
+.mySalesMain dd span:first-child{text-align: left;}
+.mySalesMain dd span:last-child a{color: #55aced; display: block;}
+
+/*--toBeShopManage.html 我要做店长--*/
+.toBeTid{color: #0085ce; font-size: 1em; line-height: 140%; padding: 1em;}
+.toList{width: 100%; overflow: hidden; background-color: #fff;}
+.toList li{width: 100%; overflow: hidden; padding: 1em; border-bottom: 1px solid #ccc; position: relative;}
+.toListImg{width: 4em; height: 4em; overflow: hidden; border-radius: 50%; position: absolute; left: 1em; top: 1em;}
+.toListText{float: left; width: 100%; min-height: 4em; overflow: hidden; padding: 0 5em 0 4.5em;}
+.toListText h4{font-size: 1em; line-height: 160%; color: #2b2b2b; font-weight: normal;}
+.toListText p,.toBeMore{font-size: 0.75em; line-height: 130%; color: #8d8d8d; transform: scale(0.9); -webkit-transform: scale(0.9); transform-origin: 0; -webkit-transform-origin: 0;}
+.toBeMore{color: #55aced; line-height: 160%;}
+.toListBtn{width: 4.5em; font-size: 1em; line-height: 2.2em; color: #fff; background-color: #55aced; text-align: center; border-radius: 0.4em; position: absolute; top: 50%; right: 1em; margin-top: -1.1em;}
+.toNavWidth li{width: 19%;}
+span.mManualBtn{width: 5.5em; padding-left: 0; text-align: center; font-size: 1em; line-height: 2em; border-radius: 0.5em; box-shadow: -1px -1px 1px #fff,1px 1px 1px #fff; position: absolute; right: 0.5em; top: 50%; margin-top: -1.1em;}
+.pr-6{padding-right: 6em;}
+span.shareBtn{color: #fff; top: 0.2em; margin-top: 0;}
+
+/*--toHandle.html 我要做店长之办理--*/
+.toHandle{width: 100%; overflow: hidden; background-color: #fff; margin-bottom: 1em;}
+.toHandleTop{width: 100%; overflow: hidden; padding: 1em 1em 0; position: relative;}
+.toHanTopImg{width: 4em; height: 4em; overflow: hidden; border-radius: 50%; position: absolute; left: 1em;}
+.toHanTopText{overflow: hidden; padding-left: 5em; float: left; min-height: 4em;}
+.toHanTopText h4{font-size: 1.25em; line-height: 140%; padding-bottom: 0.2em; color: #2b2b2b; font-weight: normal;}
+.toHanTopText p{font-size: 0.75em; line-height: 140%; color: #8d8d8d;}
+.toBeMain{width: 100%; overflow: hidden; padding: 0 1em 1em;}
+.toBeMain li{width: 100%; overflow: hidden; margin-bottom: 1em; font-size: 1em; line-height: 160%; color: #2b2b2b;}
+.toBeMain li p{padding-bottom: 0.4em;}
+.toBeMain li p em,.toBeMainBox a{color: #55aced;}
+.toBeMainBox{width: 100%; overflow: hidden; border: 1px solid #8d8d8d; border-radius: 0.5em; background-color: #fff; padding: 0.5em 1em;}
+.toBeMainBox a{white-space: normal; word-break: break-all;}
+.toBeText{width: 100%; overflow: hidden; clear: both;}
+.toBeText input{width: 75%; background-color: #fff; border: 1px solid #8d8d8d; border-radius: 0.3em; font-size: 1em; color: #939393; line-height: 3em; padding: 0 1em; float: left;}
+.toBeText a{width: 23%; font-size: 1em; line-height: 3em; color: #fff; text-align: center; background-color: #0fb9f0; border-radius: 0.3em; float: right; border: 1px solid #0fb9f0;}
+.toBeTop{top: 16%;}
+
+.pb-5{padding-bottom: 5em;}
+
+/*--toScaned.html--*/
+.toScaned{padding: 2em 2em; line-height: 3em;}
+
+
+
+
+

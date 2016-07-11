@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd">
+
+	<!-- Configures support for @Controllers -->
+	<mvc:annotation-driven />
+	
+	<!-- 连接池启动时的初始值 -->
+	<!-- 连接池的最大值 -->
+	<!-- 最大空闲值.当经过一个高峰时间后，连接池可以慢慢将已经用不到的连接慢慢释放一部分，一直减少到maxIdle为止 -->
+	<!--  最小空闲值.当空闲的连接数少于阀值时，连接池就会预申请去一些连接，以免洪峰来时来不及申请 -->
+ 	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+ 		 <property name="driverClass" value="oracle.jdbc.driver.OracleDriver" /> 
+ 		  
+         <!--  正试库
+	     <property name="jdbcUrl" value="jdbc:oracle:thin:@192.168.17.14:1521:orcl"/>--> 	
+
+         <!--  测试库-->
+	     <property name="jdbcUrl" value="jdbc:oracle:thin:@219.135.214.147:10002:ORCL1" />	 
+	      <property name="user" value="jieyang" /> 
+	      <property name="password" value="jieyang" />    
+	     
+	      <property name="initialPoolSize" value="10"/> 
+		  <property name="maxPoolSize" value="5"/> 
+		  <property name="minPoolSize" value="1"/> 
+		  <property name="acquireIncrement" value="5"/> 
+		  <property name="maxIdleTime" value="7200"/> 
+		  <property name="maxIdleTimeExcessConnections" value="2400"/> 
+		  <property name="maxConnectionAge" value="27000"/> 
+		  <property name="maxStatements" value="500"/> 
+		  <property name="maxStatementsPerConnection" value="50"/> 
+		  <property name="numHelperThreads" value="5"/> 
+		  <!-- <property name="automaticTestTable" value="con_test"/>   
+		  <property name="checkoutTimeout" value="30000"/>   
+		  <property name="idleConnectionTestPeriod" value="60"/> -->   
+  </bean>
+
+ 	<!-- 采用注解方式配置事务 -->
+	<bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+  		<property name="dataSource" ref="dataSource"/>
+ 	</bean>
+
+ 	<!-- 采用@Transactional注解方式使用事务 -->
+  	<tx:annotation-driven transaction-manager="txManager"/>
+ 	
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
+
+	<!-- 配置中央数据持久化中间件实例 -->
+	<bean id="jdbcDao" class="com.lenovocw.music.dao.impl.JdbcDaoImplc">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<!-- 配置中央数据持久化中间件实例 -->
+	<bean id="beanJdbcDao" class="com.lenovocw.music.dao.impl.BeanJdbcDaoImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<bean   id="viewResolver"
+		class="com.lenovocw.dom.UrlViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="/new2015/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	<mvc:default-servlet-handler />
+
+  
+<!-- 	 <mvc:interceptors> -->
+<!-- 	    <bean class = "com.lenovocw.music.interceptorAdapter.InterceptorAdapter"></bean> -->
+<!-- 	</mvc:interceptors> -->
+		
+	<!-- 上传文件大小限制 -->
+	<bean id="multipartResolver" 
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver"> 
+		<property name="maxUploadSize" value="9999999999999"/>
+	</bean>
+	
+	<bean id="exceptionResolver" class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+    	<property name="exceptionMappings">
+	   	<props>
+	     	<prop key="org.springframework.web.multipart.MaxUploadSizeExceededException">maxUploadExceeded</prop>
+   		</props> 
+  </property>
+ </bean>
+</beans>
